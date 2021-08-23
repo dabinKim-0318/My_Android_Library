@@ -83,4 +83,3 @@ fun main(args: Array<String>) {
 
 }
 
-//when의 조건식에는 true나 false를 리턴하는 어떤것이든 사용할 수 있다
