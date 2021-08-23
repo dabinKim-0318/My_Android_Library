@@ -20,7 +20,6 @@ fun main(args: Array<String>) {
     }
 
 
-
     //파라미터 없이 사용
     val value2: Int = 4
     when {
