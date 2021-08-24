@@ -50,10 +50,13 @@ fun showMyPlus(first:Int, second:Int):Int{
     return plus(first,second)  //ctrl누르고 가져다대면 first가 누구의 매개변수인지 알수잇음
 }
 
+
 fun main(array: Array<String>) {
     println(plus(2, 3))  //5
     println(plusFive(1))  //6
     println(plusFive(2, 10))  //12
     println(plusMany(1,2,3,4,5))
 }
+
+
 
