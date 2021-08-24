@@ -42,22 +42,43 @@ fun main(args: Array<String>) {
         true -> println()
         false -> println()
     }
-    val aa=4
-    val bb=33
-    when(aa){
-        aa+2->println()
-        bb->println()
-        in 4..5->println()
-        !in 3..5->println()
-        5,2->println()
-        33->true
-        else->3
+    val aa = 4
+    val bb = 33
+    when (aa) {
+        aa + 2 -> println()
+        bb -> println()
+        in 4..5 -> println()
+        !in 3..5 -> println()
+        5, 2 -> println()
+        33 -> true
+        else -> 3
     }
-println(aa)
+    println(aa)
 
-    val result=when(aa){
-        1->println()
-        else->println()
+    val result = when (aa) {
+        1 -> println()
+        else -> println()
     }
+
+    val apple = if (3 > 5) true else false
+    val apple3 = when (apple) {
+        true -> 1
+        false -> 3
+    }
+    println("ㄷㄷㄷ")
+    val arr = Array(4, { i -> i + 2 })
+    for (item in arr) {
+        println(item)
+    }
+
+    val arr2 = intArrayOf(1, 2, 3, 4)
+    val arr3 = arrayOf(3, 'f', 2, 5)
+    //  val arr4=StringArrayOf("김","ㄱ")
+    val arr5 = arrayOf<String>("d")
+    arr2.get(4)
+
+    val mutable=mutableListOf<Int>()
+    mutable.add(1)
+
 
 }

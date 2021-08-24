@@ -22,8 +22,10 @@ fun plusFive(first: Int, second: Int = 5): Int {
 
 // -디폴트 값X, 반환값X: Unit생략 가능
 fun printPlus(first: Int, second: Int): Unit {
-    println(23)
+    return Unit
 }
+fun print2(first:Int,second:Int):Unit{}
+
 
 // -간단하게 메서드 선언
 fun plusShort(first: Int, second: Int) {
@@ -56,6 +58,9 @@ fun main(array: Array<String>) {
     println(plusFive(1))  //6
     println(plusFive(2, 10))  //12
     println(plusMany(1,2,3,4,5))
+
+    println(printPlus(3,5).hashCode())
+    println(print2(3,5).hashCode())
 }
 
 
