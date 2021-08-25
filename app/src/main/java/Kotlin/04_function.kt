@@ -33,7 +33,7 @@ fun plusShort(first: Int, second: Int) {
 }
 
 fun plusShot2(first: Int, second: Int): Int = first + second //first+second타입 추론 가능하기에 리턴타입인 Int도 생략 가능
-
+fun dabㅅin()="하이"
 
 //-가변인자를 갖는 함수 선언
 fun plusMany(vararg numbers:Int){
@@ -52,6 +52,10 @@ fun showMyPlus(first:Int, second:Int):Int{
     return plus(first,second)  //ctrl누르고 가져다대면 first가 누구의 매개변수인지 알수잇음
 }
 
+//파라미터 직접 지정하기
+fun newfunction(nation:String="Korea", age:Int, job:String){
+}
+
 
 fun main(array: Array<String>) {
     println(plus(2, 3))  //5
@@ -61,6 +65,12 @@ fun main(array: Array<String>) {
 
     println(printPlus(3,5).hashCode())
     println(print2(3,5).hashCode())
+
+    var result= plus(3,4)
+    printPlus(4,2)
+
+    newfunction(age=24,job="교사")
+
 }
 
 

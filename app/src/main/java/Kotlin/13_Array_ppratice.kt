@@ -89,6 +89,8 @@ fun main(args: Array<String>) {
 
     val setmu = setOf<Int>(1, 2, 3, 3, 3)
     val mapmu = mapOf<Int, Int>()
+val dabin=intArrayOf()
+
 
 
 }
