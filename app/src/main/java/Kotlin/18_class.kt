@@ -43,7 +43,16 @@ class Person7(val name: String) {
     }
 }
 
-
+//프라이머리 생성자로 받은 파라미터를 클래스 전역변수로 사용하기:파라미터 앞에 변수 키워드인 val을 붙임
+class Person77( name: Int) {
+    val bal:Int=if(name>0) 0 else name
+  //  name=34
+    fun person() {
+        for (item in 0..1) {
+          //  println(name)
+        }
+    }
+}
 
 //세컨더리 생성자
 //생성자를 함수처럼 클래스 스코프 안에 직접 작성

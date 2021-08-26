@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Kotlin_Study"
 include ':app'
+include ':kotlinmodule'
