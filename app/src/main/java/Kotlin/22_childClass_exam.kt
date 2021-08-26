@@ -30,7 +30,7 @@ open class Monster2(var ph: Int, var power: Int) {
     }
 }
 
-class Night3(var name:String, var ph2: Int, var power2: Int) : Night2(ph2, power2) {
+class Night3(var name: String, var ph2: Int, var power2: Int) : Night2(ph2, power2) {
     override fun attack(monster: Monster2) {
         monster.depense(power)
         jap()
@@ -42,12 +42,14 @@ class Night3(var name:String, var ph2: Int, var power2: Int) : Night2(ph2, power
             heal()
         }
     }
-    fun jap(){
+
+    fun jap() {
         println("몬스터 쨉!")
     }
 }
 
 fun main(args: Array<String>) {
-  val dabin=  Night3("김다빈",10,4)
-dabin.attack(Monster2(3,2))
+    val dabin = Night3("김다빈", 10, 4)
+    dabin.attack(Monster2(3, 2))
+    Monster2(29, 24).attack(dabin)
 }
