@@ -1,55 +1,48 @@
 package Kotlin
 
-//기사,몬스터의 자식인 supernight,supermonster을 만들고 얘네만 가진 기능을 만들어라
-
-open class Night2(var ph: Int, var power: Int) {
-    open fun attack(monster: Monster2) {
-        monster.depense(power)
-    }
-
-    open fun depense(damage: Int) {
-        ph -= damage
-        if (ph < 3) {
-            heal()
-        }
-    }
-
-    fun heal() {
-        if (ph != 0)
-            this.ph++
-    }
-}
-
-open class Monster2(var ph: Int, var power: Int) {
-    open fun attack(night: Night2) {
-        night.depense(power)
-    }
-
-    open fun depense(damage: Int) {
-        ph -= damage
-    }
-}
-
-class Night3(var name: String, var ph2: Int, var power2: Int) : Night2(ph2, power2) {
-    override fun attack(monster: Monster2) {
-        monster.depense(power)
-        jap()
-    }
-
-    override fun depense(damage: Int) {
-        ph -= damage
-        if (ph < 3) {
-            heal()
-        }
-    }
-
-    fun jap() {
-        println("몬스터 쨉!")
-    }
-}
 
 fun main(args: Array<String>) {
-    val dabin = Night3("김다빈", 10, 4)
-    dabin.attack(Monster2(3, 2))
-    Monster2(29, 24).attack(dabin)
+var supernight=SuperNight(130,5)
+var supermonster=SuperMonster(100,2)
+    supernight.attack(supermonster)
+
 }
+
+open class Charator(var hp: Int, val power: Int) {
+    fun attack(charator: Charator, power: Int = this.power) {
+        charator.defense(power)
+    }
+
+    open fun defense(damage: Int) {
+        hp -= damage
+        //호출된 클래스 이름을 알 수 있음 이때 defense호출한 클래스는 SuperNight임
+        if (hp > 0) println(" ${javaClass.simpleName} 의 남은 체력은 $hp 입니다")
+        else println("사망했습니다")
+    }
+}
+
+//open class Charator(var hp:Int, var power:Int){
+//  fun attack(charator: Charator,power:Int=this.power){}  가능
+//fun attack(charator:Charator,power:Int=power) 불가능
+//fun attack(charator:Charator,power)  변수가 선언되어야 함. 값이 바로 전달될 수 없어
+//fun attack(Charator:Charator,power:Int)  이건 지역변수되고
+
+
+//부모생성자에 전달되는 파라미터는 이미 부모생성자에서 var val로 선언해두었기때문에
+//자식생성자에서 var val을 붙이면 안됨
+class SuperMonster(hp: Int, power: Int) : Charator(hp, power) {
+    fun bite(charator: Charator) {
+        super.attack(charator, power + 2)
+    }
+}
+
+//부모생성자에 전달되는 파라미터는 이미 부모생성자에서 var val로 선언해두었기때문에
+//자식생성자에서 var val을 붙이면 안됨
+class SuperNight(hp: Int, power: Int) : Charator(hp, power) {
+    override fun defense(damage: Int) {
+        super.defense(damage - 2)
+    }
+
+}
+
+
