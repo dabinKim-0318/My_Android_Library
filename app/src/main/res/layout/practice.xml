@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="가운데"
+        android:textSize="20dp" />
+    <!--
+    android:layout_gravity  부모가 정의한 gravity부시하고 내맘대로 정렬
+    android:gravity  뷰텍스트 범위 안에서 컨텍트를 정렬(텍스트뷰가 차지하는 영역 안에서)
+    부모 컴포넌트에서
+     android:gravity="center|bottom" 중앙&오른쪽-->
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="right"
+        android:gravity="center|bottom"
+        android:text="Gravity"
+        android:textSize="50dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:text="100"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+</LinearLayout>
