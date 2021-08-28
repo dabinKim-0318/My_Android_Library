@@ -1,18 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
+    <!--뷰 컴포넌트 만들때 꺽세로 시작하고 그 옆에 Text view라는 뷰 컴포넌트의 종류가 온다 안에 코드는 속성들임
+    닫는 꺽세를 표현하는 방법은 두가지가 있음
+    위 태그랑 아래 태그 무조건 동일해야 돼 하나 바꾸면 안스가 저절로 바꿔버림
+    어떤 뷰 컴포넌트들은 자식 뷰 컴포넌트를 가질 수 있다
+    LinearLayout은 TextView컴포넌트의 부모다 자식은 부모 태그 안쪽에 있어야한다 자식은 부모 태그 안에서 들여쓰기 되어있다
+    컨트롤+스페이스 누르면해당 컴포넌트가 가진 속성 확인가능
+
+    android:orientation="horizontal"로 자식 컴포넌트 기본적으로 가로 세로 배치
+   android:gravity="center" 자식속성 다 오른쪽으로감
+
+    텍스트뷰가 리니얼레이아웃의 자식으로 있게되면 리니얼레이아웃때문에 생기는 속성이있음
+    예를들어 텍스트뷰에 layout_gravity속성을 적용할 수 있는데 이 속성은 텍스트뷰의 속성이
+    아니라 라이널레이아웃의 속성이다 상속받아서 오버라이딩하는거랑 비슷한 개념
+
+   부모에 android:gravity="center"를하면 자식속성 다 오른쪽으로감
+   즉 자식들의 위치를 일괄적으로 옮김, 이때 자식이 android:layout_gravity="right"
+   사용하면 bottom이 적용된 상태에서 right로감(해당 컴포넌트만 움직이게할 수 있다)
+    상속받아서 오버라이딩하면 바인딩으로인해 자식꺼가 실행되는 것처럼 자식컴포넌트의 속성이 실행됨
+    -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="안녕하세요"
+        android:layout_gravity="right"
+        android:textColor="@color/purple_200"
+        android:textSize="20dp"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:text="안녕히사죠"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_200"
+        >
+    </TextView>
+
+    <!--
+     어떤 속성을 생성하든 layout width,height는 무조건나옴 숫자로 하면 숫자만큼
+      android:layout_width="match_parent" 말그대로 부모한테 맞춤
+      LinearLayout(최상위뷰)의 부모는 폰화면 이미지 뷰컴포넌트의 부모는 라이어레이아웃
+
+     이미지 색상 칠하고 싶으면 background-->
+    <!--
+   android:layout_width="wrap_content"는 자식컴포넌트의 내용물을
+   감쌀 수 있는 만큼 하겠다는 것 텍스트뷰의 내용물은 방가염이니까.
+       텍스트 사이즈를 줄이면 같이 줄어들게됨
+       -->
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+        android:background="#FF8E85"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="방가염"
+        android:textSize="50dp"
+        android:background="#CFC45E" />
+
+
+</LinearLayout>
+
+
+

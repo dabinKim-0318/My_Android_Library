@@ -16,23 +16,25 @@ class exclass() {
     }
 }
 
- private class mother{
-     //클래스의 접근 제한자에  private이 붙네.. class는 접근 제한자 안붙어있으면 원래 private이 기본.
-     // 기본=private class=자식 클래스 생성 불가=생성자 private아니니까 객체 생성은 가능
-     fun dabin(){}
+private class mother {
+    //클래스의 접근 제한자에  private이 붙네.. class는 접근 제한자 안붙어있으면 원래 private이 기본.
+    // 기본=private class=자식 클래스 생성 불가=생성자 private아니니까 객체 생성은 가능
+    fun dabin() {}
 }
-open class mother1{
+
+open class mother1 {
     private constructor()
-     constructor(hi:String)
+    constructor(hi: String)
 }
+
 //class child:mother{} private class는 자식 클래서 생성 불가
 //class child1:mother1(){}  생성자가 private이라 부모 클래스 생성자 호출해서 자식 클래스 생성 불가
-class child2(hi:String):mother1(hi){} //보무 생성자 중 private아닌 생성자 호출해서 클래스 생성 가능
+class child2(hi: String) : mother1(hi) {} //보무 생성자 중 private아닌 생성자 호출해서 클래스 생성 가능
 
 
 fun main(args: Array<String>) {
 
-     mother().dabin()  //private class 역시도 생성자 호출해서 객체 생성이 가능! 메서드 필드 호출도 됨
+    mother().dabin()  //private class 역시도 생성자 호출해서 객체 생성이 가능! 메서드 필드 호출도 됨
     //mother1()  외부에서 객체 생성을 불가능하게 하려면 생성자가 private이여야함
     //mother().num
 
@@ -97,7 +99,7 @@ fun main(args: Array<String>) {
     val arr5 = arrayOf<String>("d")
     arr2.get(4)
 
-    val mutable=mutableListOf<Int>()
+    val mutable = mutableListOf<Int>()
     mutable.add(1)
 
 
