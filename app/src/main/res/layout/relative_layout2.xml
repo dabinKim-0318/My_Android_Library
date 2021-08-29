@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!-- 하나의 뷰를 기준으로 다른 뷰들의 위치를 상대적으로 지정해보자
+뷰에 id붙이는건 모든 뷰의 속성임-->
+
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="#F44336"/>
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FFEB3B"
+        android:layout_toEndOf="@+id/view1"/>
+    <TextView
+        android:id="@+id/view3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#9C27B0"
+        android:layout_toLeftOf="@+id/view1"/>
+    <TextView
+        android:id="@+id/view4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#E91E63"
+        android:layout_toRightOf="@+id/view1"/>
+    <TextView
+        android:id="@+id/view5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#03A9F4"
+        android:layout_toStartOf="@+id/view1"/>
+
+<!--    below/above -->
+    <TextView
+        android:id="@+id/view6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FF9800"
+        android:layout_below="@+id/view1"/>
+
+    <TextView
+        android:id="@+id/view7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/view1"
+        android:background="#2196F3" />
+
+<!--    of~ + below/above-->
+
+    <TextView
+        android:id="@+id/view8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#E91E63"
+        android:layout_toStartOf="@+id/view1"
+        android:layout_above="@+id/view1"/>
+    <TextView
+        android:id="@+id/view9"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#009688"
+        android:layout_toStartOf="@+id/view1"
+        android:layout_below="@+id/view1"/>
+
+    <TextView
+        android:id="@+id/view10"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#E91E63"
+        android:layout_toEndOf="@+id/view1"
+        android:layout_above="@+id/view1"/>
+    <TextView
+        android:id="@+id/view11"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#009688"
+        android:layout_toEndOf="@+id/view1"
+        android:layout_below="@+id/view1"/>
+
+</RelativeLayout>

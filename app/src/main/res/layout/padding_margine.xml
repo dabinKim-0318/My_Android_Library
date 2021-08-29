@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    margine: text뷰에 margine을 주면 부모 뷰로부터 마진 준 만큼 떨어지게됨
+padding:자식 뷰 기준으로 자식뷰가 가진 컨텐츠를 얼마큼 떨어뜨릴꺼냐
+padding이 부여된 뷰컴포넌트가 가지고 있는 컨텐츠에 여백을 주는것
+-->
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="안녕하세요"
+        android:background="@color/purple_200"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="안녕하세요"
+        android:background="@color/teal_700"
+        android:paddingLeft="10dp"
+        android:paddingTop="30dp"/>
+<!--그냥 margin은 좌우위아래 전부 해당 dp만큼의 여백을 주는것
+원래 위치에서 부모로부터 dp여백을 줌
+그냥 padding도 해당 컴포넌트의 컨텐츠를 컴포넌트로부터 좌우아래위 전부 여백주기
+-->
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="안녕하세요"
+        android:background="@color/purple_500"
+        android:layout_margin="200dp"
+
+        android:padding="20dp"/>
+
+
+</LinearLayout>

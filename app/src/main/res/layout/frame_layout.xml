@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    FrameLayout도 리니어,릴레티브 레이아웃처럼 뷰의 부모 역할을 함
+        프레임레이아웃은 프레임레이아웃의 자식으로 있는 뷰들을 겹치게 할 수 잇음
+        LinearLayout의 자식들은 겹칠 수 없음
+        프레임레이아웃의 겹치는 순서는 제일 마지막에 작성한 자식뷰가 제일 위로 올라감
+       릴레티브 레이아웃도 뷰를 겹칠 수 있다
+       결론:
+       뷰를 겹칠 수 있는 부모 뷰컨테이너는 FrameLayout, RelativeLayout이 있음
+       근데, FrameLayout을 쓰는게 좋다 화면에 표시될 때 속도가 더 빠르고 애초에 뷰를 겹치게 할
+       용도로 나온 부모 뷰 컨테이너이기 때문이다
+        -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_200"
+            android:text="hello"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:text="hello"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:text="hello"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@color/purple_200"
+            android:text="hello"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@color/teal_200"
+            android:text="hello"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/teal_700"
+            android:text="hello"
+            android:textSize="30dp" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

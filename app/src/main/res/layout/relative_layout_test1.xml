@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    이름전부 부여-->
+
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#F44336"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/center"
+        android:background="#FFEB3B" />
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@+id/center"
+        android:background="#4CAF50" />
+
+    <TextView
+        android:id="@+id/view3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/center"
+        android:layout_centerInParent="true"
+        android:background="#9C27B0" />
+
+    <TextView
+        android:id="@+id/view4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/center"
+        android:layout_toLeftOf="@+id/view3"
+        android:background="#FF0000" />
+
+    <TextView
+        android:id="@+id/view5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/center"
+        android:layout_toRightOf="@+id/view3"
+        android:background="#3F51B5" />
+
+    <TextView
+        android:id="@+id/view6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/center"
+        android:layout_toRightOf="@+id/view3"
+        android:background="#FF5722" />
+    <TextView
+        android:id="@+id/view7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/center"
+        android:background="#8BC34A"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/view8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/center"
+        android:background="#03A9F4"
+        android:layout_toLeftOf="@+id/center"
+      />
+
+</RelativeLayout>
