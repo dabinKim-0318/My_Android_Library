@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    이미지뷰의 속성중에 src라는게 있다-->
+    <!--    src의 ""에다가 내가 넣고싶pl은 이미지의 경로를 적어준다
+    xml에서는 어떤 경로를 적어줄 때 어떤 경로라는 것을 의미할때 적어주는
+    키워드가 @임 어떤 경로에 있는 이미지냐면 layout폴더 위에있는
+    drawable이라는 폴더 안에 이미지를 넣어놓을 수 있음
+    중요한건 경로 적을때 @로 시작해야한다는 것이다 이미지 저장시는 drable폴더!
+    근데 이미지는 같은 이미지여도 해상도가 다를 수 있음
+    해상도 낮은 디바이스에 고화질p 이미지 넣으면 애초에 그릴수도 그릴 필요도 없음
+    로딩이 오래 걸리기도 하고. 그래서 같은 이미지를 해상도 별로 나눠야할 일이 있음
+    저해상도->저해상도 이미지 갖다쓰게
+    그럼 같은 이미지를 해상도별로 만들어야되냐? 해결방법이 이걸 도와주는 plugin이 있음
+    shift+shift누르고 plugsins에 안드로이드 임포터 설치햇다
+    이제 drawable임포터를 통해서 이미지를 가져와보자
+    1.나는 단 하나의 이미지만 drawable에 넣어둔다
+    2.drawable폴더 우클릭->new->batch drawable import->+->다운받은이미지 선택->맨위에꺼 클릭->od->태그네임에
+    이름바꿔주면 파일이름 변경됨
+    -->
+
+    <!--    경로는 @이후주소로 표시함-->
+
+    <!--    내가 지정한 영역에서 사진을 넣으면 여백이 발생함함 비율이 안맞아서.-->
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="#E91E63"
+        android:src="@drawable/mylove" />
+
+    <!-- wrap_content로하면 사진 딱 맞게 됨-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E91E63"
+        android:src="@drawable/mylove"/>
+
+    <!--android:scaleType=""
+    내가 300,200을 사용하고 싶은데 여백이 있는게 싫을때
+    이미지뷰에 있는 속성을 사용하면 되는데 내가 정한 비율이 사진 비율이랑 안맞아서
+    잘리는 부분이 생길수 밖에 없음-->
+
+    <!-- android:scaleType="centerCrop"
+    비율을 유지한 채 가운데 기준으로 사각형 꽉차게 확대됨
+    android:scaleType="center"
+    android:scaleType="fitEnd"
+    android:scaleType="matrix"
+     android:scaleType="centerinside"
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#E91E63"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mylove" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3:30"
+            android:background="#00BCD4"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

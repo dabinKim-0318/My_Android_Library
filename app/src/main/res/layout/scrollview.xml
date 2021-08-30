@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--스크롤뷰는 오직 하나의 자식뷰만을 가질 수 있음!!!
+    그 자식뷰를 다른 뷰 컨테이너로 한다음에 안에 여러 뷰들을 만들면 됨
+    스트롤 뷰의 android:layout_height="match_parent"를300dp로 줄이면
+    그 안에서만 스크롤이됨
+    오른쪽에 같이 뜨는 스크롤 바를 없애려면
+    android:scrollbars="none"하면됨
+      android:fillViewport="true"는 스크롤뷰 쓸때 습관적으로 무조건써라
+      구글이 스크롤뷰 잘못 만들어서 그래
+    -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@color/purple_200" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@color/teal_200" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@color/teal_700" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@color/purple_200" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@color/teal_200" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@color/teal_700" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@color/purple_200" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@color/teal_200" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@color/teal_700" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

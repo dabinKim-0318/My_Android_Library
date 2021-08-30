@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000000">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="10dp"
+            android:background="#000000"
+            android:src="@drawable/real_youtube" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:gravity="center|left"
+            android:text="백김치 tube"
+            android:textColor="#ffffff"
+            android:textSize="23dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2C2C2C">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="370dp"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic1"></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-55dp"
+                android:layout_marginRight="27dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:text="10:53"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+    <!--<ImageView-->
+    <!--android:layout_width="370dp"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/mylove"></ImageView>-->
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_marginRight="25dp"-->
+    <!--android:layout_marginBottom="390dp"-->
+    <!--android:background="#000000"-->
+    <!--android:text="10:00"-->
+    <!--android:textColor="#ffffff" />-->
