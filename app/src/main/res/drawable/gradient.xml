@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!--    간단한 이미지는 화면 해상도를 떨구지 않기 위해 개발자가 직접 코드로 이미지를 그리는 경우 존재-->
+    <!--    drawable->new->drawable resurse file-->
+    <!--    위에 selector을 shape로 바꿈  android:shape="rectangle"-->
+
+    <gradient
+        android:centerColor="#F44336"
+        android:endColor="#E91E63"
+        android:startColor="#9C27B0"
+        android:angle="90"/>
+
+</shape>

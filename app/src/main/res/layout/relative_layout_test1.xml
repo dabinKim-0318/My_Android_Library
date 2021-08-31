@@ -11,8 +11,8 @@
         android:id="@+id/center"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="#F44336"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:background="#F44336" />
 
     <TextView
         android:id="@+id/view1"
@@ -61,13 +61,14 @@
         android:layout_below="@+id/center"
         android:layout_toRightOf="@+id/view3"
         android:background="#FF5722" />
+
     <TextView
         android:id="@+id/view7"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_below="@+id/center"
-        android:background="#8BC34A"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:background="#8BC34A" />
     <TextView
         android:id="@+id/view8"
         android:layout_width="100dp"

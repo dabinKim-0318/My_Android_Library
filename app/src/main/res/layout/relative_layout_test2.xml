@@ -7,8 +7,8 @@
         android:id="@+id/center"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@android:color/background_dark"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:background="@android:color/background_dark" />
 
     <TextView
         android:layout_width="100dp"
@@ -25,12 +25,11 @@
         android:background="#673AB7" />
 
     <TextView
-    android:layout_width="100dp"
-    android:layout_height="100dp"
-    android:background="#8BC34A"
-    android:layout_below="@+id/center"
-    android:layout_centerInParent="true"
-        />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/center"
+        android:layout_centerInParent="true"
+        android:background="#8BC34A" />
 
     <TextView
         android:layout_width="100dp"
@@ -42,8 +41,8 @@
     <TextView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_centerInParent="true"
 
+        android:layout_centerInParent="true"
         android:layout_toLeftOf="@+id/center"
         android:background="#8BC34A" />
 
