@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.activity_mylistener.*
 
 class Mylistener : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        var number = 10
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mylistener)
 
@@ -34,17 +35,40 @@ class Mylistener : AppCompatActivity() {
         val click = object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 Log.d("click", "Click")
-                hello.setText("안녕하세요")  //onClick가 실행되면 setText가 실행됨=hello->안녕하세요
+                image.setImageResource(R.drawable.mylove)
             }
         }
 
-        //View를 조작하는 방법
-        //1. textView의 text속성을 직접 조작할 수 있음
-        // hello.setText("안녕하세요")  //hello가 안녕하세요로 바뀜
-        //2. ImageView의 속성을 직접 조작할 수 있음
-        //image.setImageResource(R.drawable.mylove)
-        hello.setOnClickListener(click)
-        image.setImageResource(R.drawable.mylove)
+         hello.setOnClickListener(click)
+
     }
 
 }
+
+
+
+
+
+
+
+
+
+//val click = object : View.OnClickListener {
+//    override fun onClick(p0: View?) {
+//        Log.d("click", "Click")
+//        hello.setText("안녕하세요")  //onClick가 실행되면 setText가 실행됨=hello->안녕하세요
+//        number +=10
+//        Log.d("number",""+number)
+//    }
+//}
+//
+////View를 조작하는 방법
+////1. textView의 text속성을 직접 조작할 수 있음
+//// hello.setText("안녕하세요")  //hello가 안녕하세요로 바뀜
+////2. ImageView의 속성을 직접 조작할 수 있음
+////image.setImageResource(R.drawable.mylove)
+//hello.setOnClickListener(click)
+//image.setImageResource(R.drawable.mylove)
+//}
+//
+//}
