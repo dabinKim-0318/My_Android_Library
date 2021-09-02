@@ -12,6 +12,8 @@ class Book(var name: String, var price: Int) {
 //일반 람다함수처럼 인스턴스를 반환하는게 아니라 마지막 구문의 결과값을을 return함
 //이미 인스턴스가 만들어진 후에 그 안에 있는 속성을 스코프 내에서 사용해야 할때 유용
 fun main() {
+
+
     var price=5000
     var a: String = "초특가" + Book("다빈의 코틀린", 4000).name
     println(a)

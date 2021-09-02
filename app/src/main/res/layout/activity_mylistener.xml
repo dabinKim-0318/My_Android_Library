@@ -4,14 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Android.Mylistener"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Android.Mylistener">
 
     <TextView
         android:id="@+id/hello"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="hello"/>
+        android:text="hello" />
 
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/gradient"/>
 
 </LinearLayout>
