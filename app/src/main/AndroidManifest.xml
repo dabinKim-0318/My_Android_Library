@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_Study">
         <activity
-            android:name=".Android.Carculator"
+            android:name=".Android.Open_InternetPage1"
+            android:exported="true" />
+        <activity
+            android:name=".Android.Activity_2"
+            android:exported="true" />
+        <activity
+            android:name=".Android.Activity_1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,11 +25,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Android.Mylistener"
+            android:name=".Android.Carculator"
             android:exported="true"></activity>
         <activity
+            android:name=".Android.Mylistener"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
