@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Android.FragmentActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:textSize="50dp" />
+
+    <!--    프라그먼트를 사용할땐 어떤 프라그먼트가 해당 프라그먼트 뷰컴포넌트(위젯)-->
+    <!--    차지할지 작성해주기 위해 name을 써줌-->
+    <!--    name에는 패키지 경로->프라그먼트이름 이 들어감
+    해당 프래그먼트가 이 프래그먼트를 차지하겠다,
+    이떄 id필수로 써줘야됨-->
+<!--    <fragment-->
+<!--        android:id="@+id/fragment_One"-->
+<!--        android:name="com.example.kotlin_study.Android.Fragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp" />-->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나와라"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사라져"/>
+<!--프라그먼트를 동적으로 가져오기
+id가 conrainer인 리니어레이아웃은 프레그먼트의 container역할을 하게됨-->
+<!--즉 해당 리니어레이아웃 자리에 프라그먼트를 넣게다는 것
+LinearLayout 에 넣는 이유는 부모가 될 수 있는 뷰컴포넌트(containers위젯들)
+에 프레그먼트를 붙일 수 있기 때문임 보통 LinearLayout가장 많이 사용-->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="#E91E63"/>
+
+
+
+
+</LinearLayout>
