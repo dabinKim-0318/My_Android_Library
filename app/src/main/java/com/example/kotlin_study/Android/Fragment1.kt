@@ -41,7 +41,6 @@ class Fragment : Fragment() {
     //layout에서 fragment_one.xml 파일 하나 만들자
     //이제 view그릴때 뭔 리소스 쓸지 inflate()인자로 넣어주자
     //inflate의 두번째 인자로 어디에 붙을건지 넣어주자 container에 붙겠지
-    //오버라이딩할때 저절로 생긴 return~ 코드 지워줌
     //onCreateView는 View를 리턴해야하는데 inflate()가 View를 리턴하므로 해당 코드를 리턴
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         Log.d("lifecycle", "F onCreateView")
