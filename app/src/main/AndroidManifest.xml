@@ -8,9 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Kotlin_Study">
+        android:theme="@style/dabin_Theme">
         <activity
-            android:name=".Android.FragmentActivity"
+            android:name=".Android.res"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,17 +18,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".Android.FragmentActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".Android.Open_InternetPage1"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize"></activity>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Android.Activity_2"
             android:exported="true" />
         <activity
             android:name=".Android.Activity_1"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Android.Carculator"
             android:exported="true" />

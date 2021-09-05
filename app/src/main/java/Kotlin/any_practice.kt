@@ -66,6 +66,30 @@ val person:Person10=asTest()
     val int2: Int = 10
     val double: Double = int2.toDouble()
 
+    val a:Int?=null
+    val b:Int=3
+    val c:Int?=a?.plus(b) ?:10 //Int클래스의 메서드 plus,minus,times,div
+
+    val number1:Int?=null
+    val number2:Int=5
+    val sum=number1?.plus(number2) ?:10
+   // val sum=number1+number2 ?:10
+
+    val aa=3
+    val gg=3
+    val gd=aa+gg
 
 
+    val sport=Sport2()
+    sport.lateName="메시2"
+    println(sport.lateName)
+    println(sport.lateProcess())
+}
+
+class Sport2{
+
+    lateinit var lateName:String
+    fun lateProcess(){
+        lateName.plus("메시")
+    }
 }
