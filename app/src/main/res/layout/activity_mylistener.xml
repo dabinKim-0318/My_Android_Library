@@ -19,4 +19,9 @@
         android:layout_height="100dp"
         android:src="@drawable/gradient"/>
 
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/restest"/>
+
 </LinearLayout>
