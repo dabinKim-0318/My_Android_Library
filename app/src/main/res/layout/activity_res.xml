@@ -7,14 +7,20 @@
     tools:context=".Android.res">
 
     <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/restest"
-        android:text="@string/restest"/>
+        android:text="내이름은 홍길동"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/restest"
         android:text="@string/restest"/>
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#2196F3"/>
 
 </LinearLayout>
