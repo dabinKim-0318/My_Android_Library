@@ -4,9 +4,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kotlin_study.R
 
-class AddView_Activity : AppCompatActivity() {
+class activity_add : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_view)
+        setContentView(R.layout.activity_add)
     }
 }

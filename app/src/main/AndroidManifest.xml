@@ -12,20 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_Study">
         <activity
-            android:name=".Android.AddView_Activity"
-            android:exported="true" />
-        <activity
-            android:name=".Android.Library_Activity"
+            android:name=".Android.MyActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+        <activity
+            android:name=".Android.activity_add"
+            android:exported="true" />
+        <activity
+            android:name=".Android.AddViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Android.Library_Activity"
+            android:exported="true" />
         <activity
             android:name=".Android.res"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Android.FragmentActivity"
             android:exported="true" />
@@ -35,7 +42,7 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Android.Activity_2"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".Android.Activity_1"
             android:exported="true" />
