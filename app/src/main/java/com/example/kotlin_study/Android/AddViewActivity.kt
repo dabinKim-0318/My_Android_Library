@@ -19,8 +19,11 @@ class AddViewActivity : AppCompatActivity() {
             carList.add(CarForList(" $i 번째 자동차","$i 번째 순위"))
         }
 
-        val container=findViewById<LinearLayout>(R.id.addview_container)
+        val container=findViewById<LinearLayout>(R.id.addview_container)  //이 container역할을 하는 LinearLayout에 리스트를 주루룩 넣어서 스크롤뷰로 감쌀거야
         val inflater=this@AddViewActivity.layoutInflater
+
+
+
 
     }
 }
