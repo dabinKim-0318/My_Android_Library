@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Android.RatingBar">
+    tools:context=".Android.RatingBar"
+    android:gravity="center">
 
-    <RatingBar
+<!--    <RatingBar
         android:id="@+id/ratingbarSmall"
         style="@style/Widget.AppCompat.RatingBar.Small"
         android:layout_width="wrap_content"
@@ -23,9 +24,10 @@
         android:layout_height="wrap_content"
         android:numStars="6"
         android:rating="1"
-        android:stepSize="1" />
+        android:stepSize="1" />-->
 
     <RatingBar
+
         android:id="@+id/ratingbarStlye"
         style="@style/Widget.AppCompat.RatingBar"
         android:layout_width="wrap_content"
