@@ -4,26 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Android.AddViewActivity"
+    android:background="@color/black"
+
     android:orientation="horizontal"
-    android:background="@color/purple_200">
+    tools:context=".Android.AddViewActivity">
 
 
-    <TextView
-        android:id="@+id/car_name"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:layout_width="1dp"
-        android:background="#ffffff"
-        android:layout_height="match_parent"/>
-
-    <TextView
-        android:id="@+id/car_engine"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/addview_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
 
 </LinearLayout>
