@@ -13,13 +13,13 @@
         android:theme="@style/Theme.Kotlin_Study">
         <activity
             android:name=".Android.DabinAdd"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".Android.RatingBar"
             android:exported="true" />
         <activity
             android:name=".Android.SeekBar"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".Android.MyActivity"
             android:exported="true" />

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:background="@color/purple_200">
+    android:background="@color/restest">
 
     <TextView
         android:id="@+id/car_name"

@@ -19,32 +19,27 @@ class AddViewActivity : AppCompatActivity() {
         for (i in 0 until 10) {
             carList.add(CarForList(" $i 번째 자동차", "$i 번째 순위"))
         }
-//        val textView: TextView =findViewById(R.id.hello)
-//        findViewById가 id가 hello인 문자열과 동일하면서, 속성이textView인 view를 찾아서 리턴
 
-//        public <T extends View > T findViewById(@IdRes int id) {
-//            return getDelegate().findViewById(id);
-//        }
-        //val container= findViewById<LinearLayout>(R.id.addview_container)
+        //container 불러오기
+        val container:LinearLayout = findViewById(R.id.addview_container)
 
-        val container:LinearLayout = findViewById(R.id.addview_container)  //이 container역할을 하는 LinearLayout에 리스트를 주루룩 넣어서 스크롤뷰로 감쌀거야
-
-
-
-
-        //   val inflater=this@AddViewActivity.layoutInflater
-//        public abstract class LayoutInflater {
-//            public static LayoutInflater from(Context context)
-//        }
-
+        //inflater만들기
         val inflater = LayoutInflater.from(this@AddViewActivity)
+
+        //반복문 돌면서 객체 10개 생성해서 담음
         for (i in 0 until carList.size) {
-           val itemView= inflater.inflate(R.layout.item_view, null, true)
+           //inflater.inflate()로 객체 만들어서
+            val itemView= inflater.inflate(R.layout.item_view, container, false)
+
+            //itemview의 text속성들을 변수에 담아서
             val carNameView=itemView.findViewById<TextView>(R.id.car_name)
             val carEngineView=itemView.findViewById<TextView>(R.id.car_engine)
 
+            //변수에 담은 text속성들을 setText로 조작 후
             carNameView.setText(carList.get(i).name)
             carEngineView.setText(carList.get(i).engine)
+
+            //container에 addView로 객체를 담음
             container.addView(itemView)
         }
 
