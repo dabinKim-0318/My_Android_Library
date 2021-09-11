@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E91E63"
+    android:background="#FFEB3B"
 
     android:orientation="horizontal"
     tools:context=".Android.AddViewActivity">
 
 
-    <LinearLayout
-        android:id="@+id/addview_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/addview_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
 
 </LinearLayout>

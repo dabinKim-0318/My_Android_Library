@@ -15,21 +15,19 @@ class AddViewActivity : AppCompatActivity() {
         setContentView(R.layout.activity_add_view2)
 
         //아이템 리스트 준비
-        val carList = mutableListOf<CarForList>()
+        val carList = ArrayList<CarForList>()
         for (i in 0 until 10) {
             carList.add(CarForList(" $i 번째 자동차", "$i 번째 순위"))
         }
-
         //container 불러오기
         val container:LinearLayout = findViewById(R.id.addview_container)
-
         //inflater만들기
         val inflater = LayoutInflater.from(this@AddViewActivity)
 
         //반복문 돌면서 객체 10개 생성해서 담음
         for (i in 0 until carList.size) {
            //inflater.inflate()로 객체 만들어서
-            val itemView= inflater.inflate(R.layout.item_view, container, false)
+            val itemView= inflater.inflate(R.layout.item_view, null)
 
             //itemview의 text속성들을 변수에 담아서
             val carNameView=itemView.findViewById<TextView>(R.id.car_name)
