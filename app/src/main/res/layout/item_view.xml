@@ -15,7 +15,7 @@
             android:id="@+id/car_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="4dp"
+            android:padding="50dp"
             android:textSize="20dp" />
 
         <TextView
