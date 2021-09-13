@@ -17,7 +17,7 @@ class CallingList : AppCompatActivity() {
 
         val container = findViewById<LinearLayout>(R.id.container)
         val list = ArrayList<PersonList>()
-        list.add(PersonList("Me", "Set up my Profile"))
+
         list.add(PersonList("김현희", "Hello"))
         list.add(PersonList("김수정", "심리학"))
         list.add(PersonList("김지태", "경영학"))
