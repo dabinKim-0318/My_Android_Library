@@ -1,11 +1,15 @@
 package com.example.kotlin_study.Android
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
+import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kotlin_study.R
+import kotlinx.android.synthetic.main.person_list.*
 
 class PersonList(val name: String, val story: String) {
 }
@@ -33,11 +37,24 @@ class CallingList : AppCompatActivity() {
         for (i in 0 until list.size) {
             val itemView = inflater.inflate(R.layout.person_list, null, false)
             var name2 = itemView.findViewById<TextView>(R.id.name)
-            var story2 = itemView.findViewById<TextView>(R.id.story)
+            var story2 = itemView.findViewById<Button>(R.id.story)
 
             name2.setText(list.get(i).name)
             story2.setText(list.get(i).story)
+            click(itemView)
             container.addView(itemView)
+
+        }
+
+
+    }
+
+    fun click(view: View) {
+        view.setOnClickListener {
+            val intent = Intent(this@CallingList, Calling_list_page2::class.java)
+            intent.putExtra("person", " $story ")
+            startActivity(intent)
+
         }
     }
 }

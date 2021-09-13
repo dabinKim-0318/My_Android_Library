@@ -23,12 +23,13 @@
             android:textSize="20dp"
             android:textStyle="bold" />
 
-        <TextView
+        <Button
             android:id="@+id/story"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:text="Set up my profile"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:background="#ffffff"/>
     </LinearLayout>
 </LinearLayout>
