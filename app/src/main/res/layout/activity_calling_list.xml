@@ -29,13 +29,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_marginLeft="10dp"
-                    android:gravity="center|left"
+                    android:gravity="center"
                     android:text="Contexts"
                     android:textColor="#ffffff"
                     android:textSize="30dp" />
 
                 <ImageView
-                    android:layout_width="30dp"
+                    android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="200dp"
@@ -48,19 +48,23 @@
                 android:background="@color/purple_200">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="70dp"
+                    android:gravity="center"
                     android:text="FAVORITER"
+                    android:textSize="16dp"
                     android:textColor="#ffffff" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
                     android:layout_height="20dp"
                     android:layout_gravity="center"
-                    android:paddingLeft="140dp"
                     android:text="All Conact"
+                    android:textSize="16dp"
                     android:textColor="#ffffff" />
 
             </LinearLayout>

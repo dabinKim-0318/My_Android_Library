@@ -12,10 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_Study">
         <activity
-            android:name=".Android.PhoneBook_detail_Activity"
-            android:exported="true" />
-        <activity
-            android:name=".Android.PhoneBookActivity"
+            android:name=".Android.ListViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Android.PhoneBook_detail_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Android.PhoneBookActivity"
+            android:exported="true" />
         <activity
             android:name=".Android.Calling_list_page2"
             android:exported="true" />
