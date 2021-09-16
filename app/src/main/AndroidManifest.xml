@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_Study">
         <activity
+            android:name=".Android.BingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Android.Lotto"
+            android:exported="true" />
+        <activity
             android:name=".Android.RecycleViewActivity"
             android:exported="true">
             <intent-filter>
@@ -22,7 +28,7 @@
         </activity>
         <activity
             android:name=".Android.ListViewActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Android.PhoneBook_detail_Activity"
             android:exported="true" />
