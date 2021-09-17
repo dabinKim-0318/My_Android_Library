@@ -13,12 +13,6 @@
         android:theme="@style/Theme.Kotlin_Study">
         <activity
             android:name=".Android.BingActivity"
-            android:exported="true" />
-        <activity
-            android:name=".Android.Lotto"
-            android:exported="true" />
-        <activity
-            android:name=".Android.RecycleViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".Android.RecycleViewActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".Android.ListViewActivity"
             android:exported="true" />
