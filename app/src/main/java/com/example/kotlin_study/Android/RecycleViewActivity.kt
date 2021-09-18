@@ -30,7 +30,7 @@ class RecycleViewActivity : AppCompatActivity() {
 class RecyclerViewAdapter(
     val itemList: ArrayList<CarForList>,
     val inflater: LayoutInflater
-) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
+) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() { //RecyclerView.Adapter상속받아서 Adapter만들기
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val carName: TextView
@@ -45,6 +45,7 @@ class RecyclerViewAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = inflater.inflate(R.layout.item_view, parent, false)
         return ViewHolder(view)
+
     }
 
     override fun getItemCount(): Int {
