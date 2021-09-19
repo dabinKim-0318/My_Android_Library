@@ -47,5 +47,6 @@
         android:layout_width="match_parent"
         android:layout_marginTop="39dp"
         android:text="시작"
+        android:textStyle="bold"
         android:textSize="40dp" />
 </LinearLayout>
