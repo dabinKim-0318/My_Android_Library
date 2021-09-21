@@ -1,6 +1,7 @@
 package com.example.kotlin_study.Android
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,6 +25,7 @@ class RecycleViewActivity : AppCompatActivity() {
         val adapter = RecyclerViewAdapter(carList, LayoutInflater.from(this@RecycleViewActivity))
         recycler_view.adapter = adapter
         recycler_view.layoutManager = LinearLayoutManager(this@RecycleViewActivity)
+        //recycler_view.layoutManager = GridLayoutManager(this@RecycleViewActivity,2)
     }
 }
 
@@ -32,13 +34,18 @@ class RecyclerViewAdapter(
     val inflater: LayoutInflater
 ) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() { //RecyclerView.Adapter상속받아서 Adapter만들기
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+   inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val carName: TextView
         val carEngine: TextView
 
         init {
             carName = itemView.findViewById(R.id.car_name)
             carEngine = itemView.findViewById(R.id.car_engine)
+            itemView.setOnClickListener {
+                val positoon:Int=adapterPosition
+                val engineName=itemList.get(positoon).engine
+                Log.d("engine",engineName)
+            }
         }
     }
 
