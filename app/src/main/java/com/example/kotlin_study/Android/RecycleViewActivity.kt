@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlin_study.R
 import kotlinx.android.synthetic.main.activity_recycle_view.*
@@ -24,8 +24,8 @@ class RecycleViewActivity : AppCompatActivity() {
 
         val adapter = RecyclerViewAdapter(carList, LayoutInflater.from(this@RecycleViewActivity))
         recycler_view.adapter = adapter
-        recycler_view.layoutManager = LinearLayoutManager(this@RecycleViewActivity)
-        //recycler_view.layoutManager = GridLayoutManager(this@RecycleViewActivity,2)
+        //recycler_view.layoutManager = LinearLayoutManager(this@RecycleViewActivity)
+        recycler_view.layoutManager = GridLayoutManager(this@RecycleViewActivity,2)
     }
 }
 
