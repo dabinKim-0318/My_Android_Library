@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_Study">
         <activity
+            android:name=".CallingList2_list_page"
+            android:exported="true" />
+        <activity
             android:name=".Android.CallingList2"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +28,7 @@
             android:exported="true" />
         <activity
             android:name=".Android.RecycleViewActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Android.ListViewActivity"
             android:exported="true" />
@@ -37,12 +40,10 @@
             android:exported="true" />
         <activity
             android:name=".Android.Calling_list_page2"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Android.CallingList"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Android.DabinAdd"
             android:exported="true" />
