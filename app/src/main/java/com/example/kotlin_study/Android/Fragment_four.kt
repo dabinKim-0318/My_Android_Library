@@ -19,7 +19,7 @@ import com.example.kotlin_study.R
 //Activity는 ui그릴때 oncreate호출될때 그려졌던거랑 다르군
 
 
-class Fragment_one : Fragment() {
+class Fragment1 : Fragment() {
     override fun onAttach(context: Context) {
         Log.d("lifecycle", "F onAttach")
         super.onAttach(context)
