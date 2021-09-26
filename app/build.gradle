@@ -46,5 +46,10 @@ dependencies {
     // Skip this if you don't want to use integration libraries or configure Glide.
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
-    implementation "androidx.recyclerview:recyclerview:1.2.1"
+
+    //gradle에 들어가는 implement 버전(라이브러리 버전) 업데이트 할때 주의
+    //기존 버전 호환 안될 수도 있음
+    //1->메이저(개조심!).2->마이너(하위호환 지원하긴 함 버전 올리는거 그렇게 위험하지 않음).1->업데이트 ㄱㅊ
+    implementation "androidx.recyclerview:recyclerview:1.2.1"  //recylerview를 사용하기 위해 implenent함
+    implementation 'com.google.android.material:material:1.2.1' //tab layout을 사용하기 위해
 }
