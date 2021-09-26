@@ -13,7 +13,7 @@ class TabPager_Activity : AppCompatActivity() {
         setContentView(R.layout.activity_tab_pager)
 
 
-        tab_layout.addTab(tab_layout.newTab().setText("one"))
+        tab_layout.addTab(tab_layout.newTab().setText("4"))
         tab_layout.addTab(tab_layout.newTab().setText("two"))
         tab_layout.addTab(tab_layout.newTab().setText("three"))
     }
