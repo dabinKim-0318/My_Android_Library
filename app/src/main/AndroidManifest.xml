@@ -12,22 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_Study">
         <activity
-            android:name=".Android.TabPager_Activity"
-            android:exported="true" >
+            android:name=".Android.SharedPreference"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Android.TabPager_Activity"
+            android:exported="true">
+
         </activity>
         <activity
             android:name=".CallingList2_list_page"
             android:exported="true" />
         <activity
             android:name=".Android.CallingList2"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Android.BingActivity"
             android:exported="true" />
