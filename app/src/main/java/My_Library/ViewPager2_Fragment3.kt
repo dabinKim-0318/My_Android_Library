@@ -1,18 +1,17 @@
-package com.example.kotlin_study.Android
+package My_Library
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.kotlin_study.R
 
-class Fragment_two : Fragment() {
+class ViewPager2_Fragment3 : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        Log.d("lifecycle", "F onCreateView")
-        return inflater.inflate(R.layout.activity_fragment2, container, false)
-//        return super.onCreateView(inflater, container, savedInstanceState)
+
+        return inflater.inflate(R.layout.activity_add_view2, container, false)
+
     }
 }

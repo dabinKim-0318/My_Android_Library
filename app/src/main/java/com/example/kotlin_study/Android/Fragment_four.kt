@@ -44,7 +44,7 @@ class Fragment1 : Fragment() {
     //onCreateView는 View를 리턴해야하는데 inflate()가 View를 리턴하므로 해당 코드를 리턴
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         Log.d("lifecycle", "F onCreateView")
-        return  inflater.inflate(R.layout.fragment_one,container,false)
+        return  inflater.inflate(R.layout.activity_fragment2,container,false)
 //        return super.onCreateView(inflater, container, savedInstanceState)
     }
 
