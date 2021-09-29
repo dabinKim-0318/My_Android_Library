@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kotlin_study.R
+import com.google.gson.annotations.SerializedName
 import kotlinx.android.synthetic.main.activity_1.*
 
 class Activity_1 : AppCompatActivity() {
