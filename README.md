@@ -19,3 +19,7 @@
 
 # 3️⃣[ViewPager2](https://velog.io/@dabin/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9CRecyclerView-%EC%8B%A4%EC%A0%84e)
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/84564695/135281392-99424f9d-f9b7-4601-bd08-944c07e007f1.gif)
+
+
+# 4️⃣[ViewPager2와 TabLayout연결](https://velog.io/@dabin/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9CViewPager2#viewpager2%EC%99%80-tab%EC%97%B0%EA%B2%B0%EC%8B%9C%ED%82%A4%EA%B8%B0)
+![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/84564695/135374263-0a45259e-91c2-4652-90a5-831571e8e302.gif)
