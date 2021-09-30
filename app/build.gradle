@@ -60,5 +60,5 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0' //Retrofit에 함께 사용되는 Gson라이브러리 추가
     implementation 'androidx.core:core-ktx:1.0.2' //ButtonNavigation 사용
     implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0" //AppBar 사용
-
+    implementation 'com.google.android.material:material:1.5.0-alpha03'
 }
