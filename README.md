@@ -23,3 +23,7 @@
 
 # 4️⃣[ViewPager2와 TabLayout연결](https://velog.io/@dabin/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9CViewPager2#viewpager2%EC%99%80-tab%EC%97%B0%EA%B2%B0%EC%8B%9C%ED%82%A4%EA%B8%B0)
 ![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/84564695/135374263-0a45259e-91c2-4652-90a5-831571e8e302.gif)
+
+# 4️⃣[BottomNavigationView/BottomNavigationView와 ViewPager2연결](https://velog.io/@dabin/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9CButton-Navigation)
+
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/84564695/135392423-27f5c280-69dc-4706-ae4f-4715c11879e6.gif)
