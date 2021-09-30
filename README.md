@@ -30,5 +30,5 @@
 
 # 6️⃣[spinner/RadioGroup](https://velog.io/@dabin/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9CspinnerRadioGroupRadioButton)
 
-<img src="https://user-images.githubusercontent.com/84564695/135392423-27f5c280-69dc-4706-ae4f-4715c11879e6.gif" width="400" height="800"/>
+<img src="https://user-images.githubusercontent.com/84564695/135409534-e6732982-eb73-475e-bede-0d7a85ba2054.gif" width="400" height="800"/>
 
