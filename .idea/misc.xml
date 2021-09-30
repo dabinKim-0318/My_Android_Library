@@ -4,11 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/checkbox_custom.xml" value="0.15555555555555556" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/gradient.xml" value="0.1" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/radious.xml" value="0.1" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/radius.xml" value="0.1" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/solid.xml" value="0.1" />
+        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/spinner_background.xml" value="0.10833333333333334" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/stroke.xml" value="0.1" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/aaaaaaaaaaa.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_1.xml" value="0.15092592592592594" />
@@ -18,12 +20,15 @@
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_add_view2.xml" value="0.1" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_async.xml" value="0.1" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_bing.xml" value="0.264" />
+        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_button_navigation_view.xml" value="0.136" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_calling_list.xml" value="0.264" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_calling_list2.xml" value="0.4" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_calling_list2_list_page.xml" value="0.16" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_calling_list_page2.xml" value="0.2" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_carculator.xml" value="0.2" />
+        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_check_box.xml" value="0.176" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_dabin_add.xml" value="0.17518248175182483" />
+        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_edit_text.xml" value="0.264" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_fragment.xml" value="0.152" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_fragment2.xml" value="0.1" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_fragment3.xml" value="0.1" />
@@ -89,7 +94,9 @@
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/test.xml" value="0.264" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/test1.xml" value="0.16" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/test_answer.xml" value="0.2" />
+        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/menu/my_navigation_items.xml" value="0.2" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/kotlinmodule/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/TFX5470H/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.23802083333333332" />
       </map>
     </option>
   </component>

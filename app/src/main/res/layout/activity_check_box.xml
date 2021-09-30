@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="My_Library.CheckBox">
+
+    <CheckBox
+
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+
+        android:paddingLeft="10dp"
+        android:text="아메리카노"
+        android:textColor="@color/purple_200" />
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:button="@drawable/checkbox_custom"
+        android:paddingLeft="10dp"
+        android:text="라떼"
+        android:textColor="@color/purple_200" />
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:button="@drawable/checkbox_custom"
+        android:paddingLeft="10dp"
+        android:text="디카페인"
+        android:textColor="@color/purple_200" />
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show Toast"
+        android:textSize="35dp" />
+
+
+</LinearLayout>

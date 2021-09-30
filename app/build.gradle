@@ -53,9 +53,12 @@ dependencies {
     //gradle에 들어가는 implement 버전(라이브러리 버전) 업데이트 할때 주의
     //기존 버전 호환 안될 수도 있음
     //1->메이저(개조심!).2->마이너(하위호환 지원하긴 함 버전 올리는거 그렇게 위험하지 않음).1->업데이트 ㄱㅊ
-    implementation "androidx.recyclerview:recyclerview:1.2.1"  //recylerview를 사용하기 위해
-    implementation 'com.google.android.material:material:1.2.1' //tab layout을 사용하기 위해
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0' //Retrofit 라이브러리 사용 위해
-    implementation "androidx.viewpager2:viewpager2:1.0.0" //ViewPager2를 사용하기 위해
+    implementation "androidx.recyclerview:recyclerview:1.2.1"  //recylerview를 사용
+    implementation 'com.google.android.material:material:1.2.1' //tab layout을 사용
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0' //Retrofit 사용
+    implementation "androidx.viewpager2:viewpager2:1.0.0" //ViewPager2 사용
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0' //Retrofit에 함께 사용되는 Gson라이브러리 추가
+    implementation 'androidx.core:core-ktx:1.0.2' //ButtonNavigation 사용
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0" //AppBar 사용
+
 }

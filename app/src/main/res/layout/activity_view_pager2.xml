@@ -4,7 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="My_Library.ViewPager2">
+    tools:context="My_Library.ViewPager2"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/ViewPager2_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"

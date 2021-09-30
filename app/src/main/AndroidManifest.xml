@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_Study">
         <activity
-            android:name="My_Library.ViewPager2"
+            android:name="My_Library.CheckBox"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,8 +21,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="My_Library.Fragment_Activity"
+            android:name="My_Library.Spinner_RadioButton"
             android:exported="true"></activity>
+        <activity
+            android:name="My_Library.ButtonNavigationView"
+            android:exported="true" />
+        <activity
+            android:name="My_Library.ViewPager2"
+            android:exported="true" />
+        <activity
+            android:name="My_Library.Fragment_Activity"
+            android:exported="true" />
         <activity
             android:name="My_Library.Activity_two"
             android:exported="true" />
