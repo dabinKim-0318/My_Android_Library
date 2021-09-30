@@ -28,7 +28,7 @@
 
 ->BottomNavigationView와 ViewPager2연결 공부 필요
 
-#6️⃣[spinner/RadioGroup](https://velog.io/@dabin/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9CspinnerRadioGroupRadioButton)
+# 6️⃣[spinner/RadioGroup](https://velog.io/@dabin/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9CspinnerRadioGroupRadioButton)
 
 <img src="https://user-images.githubusercontent.com/84564695/135392423-27f5c280-69dc-4706-ae4f-4715c11879e6.gif" width="400" height="800"/>
 
