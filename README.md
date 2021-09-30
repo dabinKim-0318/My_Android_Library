@@ -36,4 +36,7 @@
 
 <img src="https://user-images.githubusercontent.com/84564695/135442247-95f3e6ef-0c0f-48e7-9c37-67e74fba3cca.gif" width="400" height="700"/>
 
+# 6️⃣[CheckedTextView/Selector](https://velog.io/@dabin/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-Selector-%EC%9D%B4%EC%9A%A9)
+
+<img src="https://user-images.githubusercontent.com/84564695/135465062-68b4b205-f97c-4bf3-ba96-1ab9e2078bbd.gif" width="400" height="700"/>
 
