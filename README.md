@@ -34,6 +34,6 @@
 
 # 6️⃣[CheckBox](https://velog.io/@dabin/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9CCheckBox#checkbox%EC%97%90-listener%EB%8B%AC%EA%B8%B0)
 
-<img src="![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/84564695/135442247-95f3e6ef-0c0f-48e7-9c37-67e74fba3cca.gif)
-" width="400" height="700"/>
+<img src="https://user-images.githubusercontent.com/84564695/135442247-95f3e6ef-0c0f-48e7-9c37-67e74fba3cca.gif" width="400" height="700"/>
+
 
