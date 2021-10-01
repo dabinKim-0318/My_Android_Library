@@ -24,6 +24,8 @@
             app:statusBarScrim="@android:color/transparent"
             app:title="Kimdabin">
 
+            <!--            app:statusBarScrim="@android:color/transparent"-->
+
             <ImageView
                 android:id="@+id/image"
                 android:layout_width="match_parent"
