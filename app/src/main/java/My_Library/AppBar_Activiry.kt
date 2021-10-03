@@ -13,21 +13,21 @@ class AppBar_Activiry : AppCompatActivity() {
 
 
         topAppBar.setNavigationOnClickListener {
-         Toast.makeText(this,"navigation눌림",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "navigation눌림", Toast.LENGTH_SHORT).show()
         }
 
         topAppBar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.favorite -> {
-                    Toast.makeText(this,"favorite",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "favorite", Toast.LENGTH_SHORT).show()
                     true
                 }
                 R.id.search -> {
-                    Toast.makeText(this,"search",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "search", Toast.LENGTH_SHORT).show()
                     true
                 }
                 R.id.more -> {
-                    Toast.makeText(this,"more",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "more", Toast.LENGTH_SHORT).show()
                     true
                 }
                 else -> false

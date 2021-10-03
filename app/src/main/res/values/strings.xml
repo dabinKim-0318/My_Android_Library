@@ -1,6 +1,20 @@
 <resources>
     <string name="app_name">Kotlin_Study</string>
     <string name="restest">나의 이름은 에베베</string>
+    <string name="cancel">CANCLE</string>
+    <string name="decline">DECLINE</string>
+    <string name="supporting_text">supporting_text</string>
+    <string name="title">title</string>
+
+
+    <string-array name = "좋아">
+        <item>"커피"</item>
+        <item>"떡볶이"</item>
+        <item>"피자"</item>
+    </string-array>
+
+
+    <string name="accept">ACCEPT</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
