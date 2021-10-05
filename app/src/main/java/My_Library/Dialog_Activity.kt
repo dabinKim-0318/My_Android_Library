@@ -17,8 +17,7 @@ class Dialog_Activity : AppCompatActivity() {
         val binding = ActivityDialogBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //   public Builder(@NonNull Context context) { }
-        //public class AlertDialog extends AppCompatDialog implements DialogInterface
+//1.text+title
         binding.bt1.setOnClickListener {
             var builder = AlertDialog.Builder(this)
             builder.setIcon(com.example.kotlin_study.R.mipmap.ic_launcher)
@@ -26,7 +25,7 @@ class Dialog_Activity : AppCompatActivity() {
             builder.setMessage("message")
             builder.show()
         }
-
+//2.text+title+밑에 버튼 3개
         binding.bt2.setOnClickListener {
 
             var builder = AlertDialog.Builder(this)
@@ -52,7 +51,8 @@ class Dialog_Activity : AppCompatActivity() {
 
 
         }
-//  public Builder setItems(@ArrayRes int itemsId, final OnClickListener listener)
+         //  public Builder setItems(@ArrayRes int itemsId, final OnClickListener listener)
+//3.spinner처럼 리스트로 보여주고 하나 선택
         binding.bt3.setOnClickListener {
             var builder = AlertDialog.Builder(this)
             builder.setTitle("리스트 추가 예제")
@@ -63,19 +63,21 @@ class Dialog_Activity : AppCompatActivity() {
             builder.show()
         }
 
-
+//4.체크박스로 여러개 선택
         binding.bt4.setOnClickListener {
             var builder = AlertDialog.Builder(this)
-            val selectedItems = ArrayList<String>()
-            val items = resources.getStringArray(com.example.kotlin_study.R.array.좋아)
-//타이틀넣고 setPositiveButton추가해서 ok버튼 만들기
+            val selectedItems = ArrayList<String>()  //체크박스로 클릭한 아이템 리스트로 저장
+            val items = resources.getStringArray(com.example.kotlin_study.R.array.좋아) //만들어둔 리스트 가져오기
+
+
+            //타이틀넣고 setPositiveButton추가해서 ok버튼 만들기
             builder.setTitle("리스트 추가 예제")
-            //여기서부터가 리스트 넣는 코드
+            //여기서부터가 체크박스 정의하는 부분
             builder.setMultiChoiceItems(com.example.kotlin_study.R.array.좋아, null, OnMultiChoiceClickListener
             { dialog, pos, isChecked ->
                 if (isChecked == true) // Checked 상태일 때 추가
                 {
-                    selectedItems.add(items[pos])
+                    selectedItems.add(items[pos])  //선택된 아이템을 만들어둔 리스트에서 번지로 꺼내옴
                 } else  // Check 해제 되었을 때 제거
                 {
                     selectedItems.remove(items[pos])
@@ -84,11 +86,11 @@ class Dialog_Activity : AppCompatActivity() {
 
             builder.setPositiveButton("OK") { dialog, pos ->
                 var SeletedItemsString = ""
-                for (i in selectedItems.indices) {
+                for (i in selectedItems.indices) {  // 컬렉션에서 데이터 위치를 나타내는 인덱스값을 이용
                     SeletedItemsString = SeletedItemsString + "/" + selectedItems[i]
                 }
-                val toast = Toast.makeText(applicationContext, "선택 된 항목은 :$SeletedItemsString", Toast.LENGTH_LONG)
-                toast.setGravity(Gravity.CENTER, 0, 0)
+                val toast = Toast.makeText(this, "선택 된 항목은 :$SeletedItemsString", Toast.LENGTH_LONG)
+                toast.setGravity(Gravity.CENTER, 0, 0) //토스트 띄우는 위치 조정
                 toast.show()
             }
 
@@ -96,32 +98,30 @@ class Dialog_Activity : AppCompatActivity() {
         }
 
 
-
+//5.라디오버튼으로 하나 선택
         binding.bt5.setOnClickListener {
             var builder = AlertDialog.Builder(this)
 
             val items = resources.getStringArray(com.example.kotlin_study.R.array.좋아)
             val selectedItem = ArrayList<String>()
-            //     selectedItem.add(items[0]) //다이어로그 켜지면 디폴트로 선택되어있는 거=>좋아 리스트의 0번째 아이템!
+            selectedItem.add(items[0]) //다이어로그 켜지면 디폴트로 선택되어있는 거=>좋아 리스트의 0번째 아이템! 이거 안해주면 아무것도 선택안하고 다이어로그 껏을때 null이라 에러남
 
 
 //타이틀넣고 setPositiveButton추가해서 ok버튼 만들기
             builder.setTitle("리스트 추가 예제")
-            builder.setPositiveButton("ok") { dialogInterface: DialogInterface, i: Int ->  //OnClickListener 인터페이스를 구현한 익명객체를 넣는듯
-                Toast.makeText(this, "하이", Toast.LENGTH_SHORT)
-            }
+
 
             //여기서부터가 리스트 넣는 코드
-            builder.setSingleChoiceItems(com.example.kotlin_study.R.array.좋아, 3, DialogInterface.OnClickListener { dialog, pos ->
+            builder.setSingleChoiceItems(com.example.kotlin_study.R.array.좋아, 0, DialogInterface.OnClickListener { dialog, pos ->
                 selectedItem.clear()
-                selectedItem.add(items[pos])
+                selectedItem.add(items[pos])  //라디오 버튼 누를때마다 기존 [0]에 있던 아이템 사라지고 들어가고..selectedItem는 계속 0번째 인덱스의 벨류만 바뀜
                 Toast.makeText(this, selectedItem[0], Toast.LENGTH_SHORT).show()
             })
 
 
 
             builder.setPositiveButton("OK") { dialog, pos ->
-                val toast = Toast.makeText(this, "선택된 항목 : " + selectedItem[0], Toast.LENGTH_LONG)
+                val toast = Toast.makeText(this, "선택된 항목 : " + selectedItem[0], Toast.LENGTH_LONG)  //결과적으로 인덱스 0번째의 벨류만 리스트에 있겟지
                 toast.setGravity(Gravity.CENTER, 0, 0)
                 toast.show()
             }

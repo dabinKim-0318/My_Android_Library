@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/checkbox_custom.xml" value="0.15555555555555556" />
+        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/dialog_dloo_2_background.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/dialog_doll_button.xml" value="0.24537037037037038" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/gradient.xml" value="0.1" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/radious.xml" value="0.1" />
@@ -13,6 +15,7 @@
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/solid.xml" value="0.1" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/spinner_background.xml" value="0.10833333333333334" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/drawable/stroke.xml" value="0.1" />
+        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/font/font.xml" value="0.24537037037037038" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/aaaaaaaaaaa.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_1.xml" value="0.2" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_2.xml" value="0.10462962962962963" />
@@ -32,6 +35,7 @@
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_collapsing_toolbar_layout.xml" value="0.1" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_dabin_add.xml" value="0.17518248175182483" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_dialog.xml" value="0.2" />
+        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_dialog_doll.xml" value="0.2" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_dialog_test.xml" value="0.4" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_edit_text.xml" value="0.264" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/activity_edit_text2.xml" value="0.176" />
@@ -72,6 +76,8 @@
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/add_practice3.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/all_test.xml" value="0.2" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/all_test_answer.xml" value="0.17857142857142858" />
+        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/dialog_doll_2.xml" value="0.264" />
+        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/dialog_open.xml" value="0.23802083333333332" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/fragment_my.xml" value="0.1" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/fragment_one.xml" value="0.128" />
         <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/Kotlin_Study/app/src/main/res/layout/fragment_one2.xml" value="0.1" />
