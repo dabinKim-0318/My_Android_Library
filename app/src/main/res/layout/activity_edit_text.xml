@@ -54,8 +54,8 @@
             android:layout_width="120dp"
             android:layout_height="45dp"
             android:layout_marginLeft="10dp"
-            android:spinnerMode="dialog"
             android:background="@drawable/spinner_background"/>
+        android:spinnerMode="dialog"  다이어로그 형식으로 띄울수도 있음!
 
     </LinearLayout>
 
