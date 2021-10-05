@@ -7,10 +7,12 @@
     <string name="title">title</string>
 
 
-    <string-array name = "좋아">
-        <item>"커피"</item>
-        <item>"떡볶이"</item>
-        <item>"피자"</item>
+    <string-array name="좋아">
+        <item>"차가운커피"</item>
+        <item>"치즈떡볶이"</item>
+        <item>"고구마피자"</item>
+        <item>"고구마떡"</item>
+        <item>"고구마치킨"</item>
     </string-array>
 
 
