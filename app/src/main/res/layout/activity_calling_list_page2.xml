@@ -38,7 +38,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity=""
-                android:src="@drawable/three_dot" />
+                android:src="@drawable/heart_red" />
         </LinearLayout>
 
 

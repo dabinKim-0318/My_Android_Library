@@ -6,10 +6,7 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.Window
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
@@ -37,38 +34,40 @@ class Dialog_Doll : AppCompatActivity() {
 
 
 
-        var et_id_in = dialog.findViewById<EditText>(R.id.et_id_in)
-        var size = dialog.findViewById<TextView>(R.id.size)
         fun mydialog() {
+            var et_id_in = dialog.findViewById<EditText?>(R.id.et_put_id)
+            var size = dialog.findViewById<TextView?>(R.id.size)
+            val appCompatButton = dialog.findViewById<Button>(R.id.appCompatButton)
             dialog.show()
+            et_id_in.setSelection(et_id_in.text.length)
+
             et_id_in.addTextChangedListener(object : TextWatcher {
-                override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
-                override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-                }
-
-                override fun afterTextChanged(s: Editable) {
-                    if(s.toString()=="안녕"){toast()}
-
-                    size.setText(s.length.toString() + "글자")
+                override fun afterTextChanged(p0: Editable?) {}
+                override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
+                override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                    size.setText(p0.toString().length.toString() + "글자")
                 }
             })
 
 
-            val appCompatButton = dialog.findViewById<Button>(R.id.appCompatButton)
             appCompatButton.setOnClickListener {
                 toast()
             }
 
+            val textView4 = dialog.findViewById<ImageView>(R.id.textView4)
+            textView4.setOnClickListener {
+                dialog.dismiss()
+                et_id_in.text.clear()
+            }
         }
+
+
+
 
         binding.bvOk.setOnClickListener {
             mydialog()
 
         }
-
-
-
-
 
 
     }

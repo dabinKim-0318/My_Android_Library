@@ -9,7 +9,11 @@
         <item name="colorOnPrimary">@color/white</item>
         <item name="android:windowTranslucentStatus">true</item>
 
+
+
     </style>
+
+
     <style name="CollapsingToolBar.Expanded" parent="TextAppearance.MaterialComponents.Headline5">
         <item name="android:textColor">@color/black</item>
     </style>
@@ -17,7 +21,6 @@
     <style name="CollapsingToolBar.Collapsed" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="android:textColor">@color/black</item>
     </style>
-
 
 
 </resources>

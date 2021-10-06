@@ -37,7 +37,7 @@
         android:id="@+id/bt4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="list띄우기"
+        android:text="체크박스"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt3" />
@@ -45,7 +45,7 @@
         android:id="@+id/bt5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="list띄우기"
+        android:text="라디오버튼"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt4" />
