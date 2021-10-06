@@ -21,6 +21,11 @@ class Dialog_Doll : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityDialogDollBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+
+
+
         fun toast() {
             Toast.makeText(this, "Ddd", Toast.LENGTH_SHORT).show()
         }
@@ -31,19 +36,24 @@ class Dialog_Doll : AppCompatActivity() {
         dialog.setContentView(R.layout.dialog_doll_2)// xml 레이아웃 파일과 연결(다이어로그 레이아웃 아닌거 주의!)
 
 
+
+        var et_id_in = dialog.findViewById<EditText>(R.id.et_id_in)
+        var size = dialog.findViewById<TextView>(R.id.size)
         fun mydialog() {
             dialog.show()
-            val et_id_in = dialog.findViewById<EditText>(R.id.et_id_in)
-            val size = dialog.findViewById<TextView>(R.id.size)
-
             et_id_in.addTextChangedListener(object : TextWatcher {
-                override fun afterTextChanged(p0: Editable?) { }
-                override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
-                override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                    var userinput = et_id_in.text.toString()
-                    size.text = userinput.length.toString() + " / 100"
+                override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+                override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+                }
+
+                override fun afterTextChanged(s: Editable) {
+                    if(s.toString()=="안녕"){toast()}
+
+                    size.setText(s.length.toString() + "글자")
                 }
             })
+
+
             val appCompatButton = dialog.findViewById<Button>(R.id.appCompatButton)
             appCompatButton.setOnClickListener {
                 toast()
@@ -55,6 +65,10 @@ class Dialog_Doll : AppCompatActivity() {
             mydialog()
 
         }
+
+
+
+
 
 
     }

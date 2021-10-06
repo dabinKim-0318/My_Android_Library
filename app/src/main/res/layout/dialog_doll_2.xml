@@ -6,7 +6,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/dialog_dloo_2_background"
-    tools:context="My_Library.Dialog_Doll">
+    tools:context="My_Library.Dialog_Doll"
+    >
 
 
     <ImageView
@@ -30,6 +31,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="73dp"
+        android:fontFamily="@font/pretendard_font"
         android:text="@string/activity_dialog_doll_title"
         android:textColor="@color/black"
         android:textSize="16dp"
@@ -61,11 +63,11 @@
         android:layout_marginTop="24dp"
         android:background="@drawable/dialog_doll_button"
         android:hint="아이디를 입력해주세요"
-        android:paddingEnd="40dp"
         android:padding="12dp"
+        android:fontFamily="@font/pretendard_font"
+        android:paddingEnd="40dp"
         android:textColorHint="#B8B6B6"
         android:textSize="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tv_title"
@@ -73,10 +75,9 @@
 
     <TextView
         android:id="@+id/size"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-8dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:gravity="end"
         android:text="/6"
@@ -98,11 +99,11 @@
         android:background="@drawable/radius"
         android:text="확인"
         android:textSize="18dp"
+        android:fontFamily="@font/pretendard_font"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/et_id_in"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/et_id_in"
-    />
+        app:layout_constraintStart_toStartOf="@+id/et_id_in" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
