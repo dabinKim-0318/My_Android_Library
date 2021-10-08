@@ -12,7 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Switch"
-        app:layout_constraintBottom_toTopOf="@+id/sw_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,14 +20,5 @@
         android:layout_marginBottom="20dp"
 />
 
-    <Switch
-        android:id="@+id/sw_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch"
-        app:layout_constraintEnd_toEndOf="@+id/sw_1"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/sw_1"
-        app:layout_constraintTop_toBottomOf="@+id/sw_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
