@@ -12,8 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_Study">
         <activity
-            android:name="My_Library.Switch_Button"
-            android:exported="true">
+            android:name="My_Library.SampleFragment_Activity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,12 +21,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="My_Library.Switch_Button"
+            android:exported="true"></activity>
+        <activity
             android:name="My_Library.addTextChangedListener"
             android:exported="true" />
         <activity
             android:name="My_Library.Dialog_Doll"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize"></activity>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="My_Library.Dialog_Custom"
             android:exported="true" />
@@ -35,7 +38,7 @@
             android:exported="true" />
         <activity
             android:name="My_Library.Dialog_Activity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name="My_Library.CollapsingToolbarLayout_Activity"
             android:exported="true" />
@@ -66,7 +69,9 @@
             android:exported="true" />
         <activity
             android:name="My_Library.Activity_one"
-            android:exported="true" />
+            android:exported="true">
+
+        </activity>
         <activity
             android:name="My_Library.RecyclerView_Activity"
             android:exported="true" />

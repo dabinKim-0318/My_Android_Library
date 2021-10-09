@@ -1,6 +1,5 @@
 package My_Library
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kotlin_study.R
@@ -12,8 +11,13 @@ class Activity_one : AppCompatActivity() {
         setContentView(R.layout.activity_one)
 
         Activity_one_Button.setOnClickListener {
-            val intent = Intent(this@Activity_one, Activity_two::class.java)
-            startActivity(intent)
+            val fragment = Fragment_SOPT()
+            val fragmentManager = supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.hi,fragment)
+//            val intent = Intent(this@Activity_one, Activity_two::class.java)
+//            startActivity(intent)
+            fragmentTransaction.commit()
         }
 
     }
