@@ -23,7 +23,7 @@ class SOPT_Fragment_Activity : AppCompatActivity() {
     }
 
 
-    fun transactionFragment() {
+   private fun transactionFragment() {
         val fragment1 = SOPT_Fragment()
         val fragment2 = SOPT_Fragment2()
 
