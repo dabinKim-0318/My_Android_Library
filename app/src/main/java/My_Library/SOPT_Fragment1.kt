@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.kotlin_study.databinding.ActivitySoptFragmentBinding
 
-class SOPT_Fragment : Fragment() {
+class SOPT_Fragment1 : Fragment() {
     private var _binding: ActivitySoptFragmentBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(

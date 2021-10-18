@@ -24,7 +24,7 @@ class SOPT_Fragment_Activity : AppCompatActivity() {
 
 
    private fun transactionFragment() {
-        val fragment1 = SOPT_Fragment()
+        val fragment1 = SOPT_Fragment1()
         val fragment2 = SOPT_Fragment2()
 
         binding.bvFragment.setOnClickListener {
