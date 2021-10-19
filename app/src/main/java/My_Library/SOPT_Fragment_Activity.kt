@@ -41,7 +41,7 @@ class SOPT_Fragment_Activity : AppCompatActivity() {
                 }
 
             }
-            transaction.commit()
+            transaction.commit()  //transaction사용후 항상 commit()으로 닫기
         }
 
     }
