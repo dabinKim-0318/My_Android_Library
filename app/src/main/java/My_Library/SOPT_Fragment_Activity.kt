@@ -33,7 +33,7 @@ class SOPT_Fragment_Activity : AppCompatActivity() {
             when (position) {
                 FIRST_POSITION -> {
                     transaction.replace(R.id.container, fragment1)
-                    position = SECOND_POSITION
+                    position = SECOND_POSITION //포지션 바꿔주는거 잊지말기
                 }
                 SECOND_POSITION -> {
                     transaction.replace(R.id.container, fragment2)
