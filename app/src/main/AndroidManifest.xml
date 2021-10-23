@@ -14,11 +14,6 @@
         <activity
             android:name="My_Library.SOPT_Fragment_Activity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="My_Library.SampleFragment_Activity"
@@ -64,7 +59,13 @@
             android:exported="true" />
         <activity
             android:name="My_Library.ViewPager2"
-            android:exported="true" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="My_Library.Fragment_Activity"
             android:exported="true" />
