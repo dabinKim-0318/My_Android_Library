@@ -12,13 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_Study">
         <activity
-            android:name="My_Library.SOPT_Fragment_Activity"
+            android:name="Splash.PumkinSplash"
             android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
+            android:name="My_Library.SOPT_Fragment_Activity"
+            android:exported="true" />
+        <activity
             android:name="My_Library.SampleFragment_Activity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name="My_Library.Switch_Button"
             android:exported="true" />
@@ -28,7 +35,8 @@
         <activity
             android:name="My_Library.Dialog_Doll"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize">
+        </activity>
         <activity
             android:name="My_Library.Dialog_Custom"
             android:exported="true" />
@@ -59,13 +67,7 @@
             android:exported="true" />
         <activity
             android:name="My_Library.ViewPager2"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name="My_Library.Fragment_Activity"
             android:exported="true" />
@@ -74,7 +76,7 @@
             android:exported="true" />
         <activity
             android:name="My_Library.Activity_one"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name="My_Library.RecyclerView_Activity"
             android:exported="true" />
