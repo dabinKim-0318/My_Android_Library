@@ -13,7 +13,6 @@ class PumkinSplash : AppCompatActivity() {
         setContentView(R.layout.activity_pumkin_splash2)
 
         startLoading()
-
     }
 
     private fun startLoading() {
@@ -26,6 +25,5 @@ class PumkinSplash : AppCompatActivity() {
 
     companion object {
         const val SPLASH_VIEW_TIME = 2000L
-
     }
 }
