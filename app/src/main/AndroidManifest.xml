@@ -21,8 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="My_Library.SOPT_Fragment_Activity"
-            android:exported="true" />
+            android:name="My_Library.SOPT_Fragment_Activity" />
         <activity
             android:name="My_Library.SampleFragment_Activity"
             android:exported="true" />
