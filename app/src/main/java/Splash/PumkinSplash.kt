@@ -16,6 +16,7 @@ class PumkinSplash : AppCompatActivity() {
 
         startLoading()
     }
+    //
 
     private fun startLoading() {
         val handler = Handler()
