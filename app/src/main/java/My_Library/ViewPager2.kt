@@ -48,7 +48,7 @@ class ViewPager2 : AppCompatActivity() {
 
     }
 
-    // 추가 기능 ) back 버튼 클릭시 화면 슬라이드 과거로 이동시키기
+    // 추가 ) back 버튼 클릭시 화면 슬라이드 과거로 이동시키기
     override fun onBackPressed() {
         if (viewPager2.currentItem == 0) {
             super.onBackPressed()
