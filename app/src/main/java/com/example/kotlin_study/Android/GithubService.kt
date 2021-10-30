@@ -1,9 +1,12 @@
 package com.example.kotlin_study.Android
 
+import retrofit2.http.GET
+import retrofit2.http.Path
+
 
 interface GithubService {
-  //  @GET("/users/{user}/repos")
-  //  fun getRepoList(@Path("user") user: String): Call<GithubDataclass>
+    @GET("/orgs/{org}/repos")
+    fun getRepoList(@Path("org") username: String):retrofit2.Call<GitRepositoryResponseData>
 
 }
 

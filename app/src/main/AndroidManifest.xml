@@ -62,11 +62,6 @@
         <activity
             android:name="My_Library.ViewPager2"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="My_Library.Fragment_Activity"
@@ -85,7 +80,13 @@
             android:exported="true" />
         <activity
             android:name=".Android.GithubService_Activity"
-            android:exported="true" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Android.SharedPreference"
             android:exported="true" />
