@@ -10,7 +10,6 @@ object GithubServiceImplementation {
 
     private val retrofit: Retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
-        // 이 부분 추가하기
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
