@@ -5,9 +5,6 @@ import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import android.os.Bundle
-import android.os.PersistableBundle
-import androidx.appcompat.app.AppCompatActivity
 
 //sqlite를 사용하는 도구가 되는 클래스를 안드로이드에서 제공하는데 그거 이름이 sqliteopenhelper이기때문
 //데이터 베이스도 안드로이드 입장에서 하나의 파일이 생성되는거기 때문에 파일의 이름=name을 지정해줘야함
@@ -18,7 +15,8 @@ class SqliteHelper(context: Context, name: String, version: Int) : SQLiteOpenHel
     override fun onCreate(db: SQLiteDatabase?) {
         //데베에 memo라는 이름의 테이블을 만들고 no라는 속성값은 integer타입으로, primary key로 해두면 1,2,3,4,...정수값 자동 입력되어서 생성됨
         //sql예약어를 사용하기 위해서 ``로 감쌈
-        val create = "create table memo (`no` integer primary key, content text, datetime integer)"
+        //    val create = "create table memo (`no` integer primary key, content text, datetime integer)"
+        val create = "create table memo (`no` integer , content text, datetime integer)"
         db?.execSQL(create)
     }
 
@@ -45,6 +43,8 @@ class SqliteHelper(context: Context, name: String, version: Int) : SQLiteOpenHel
     }
 
     //데이터 조회함수
+
+
     @SuppressLint("Range")
     fun selectMemo(): MutableList<Memo> {
         val list = mutableListOf<Memo>()
@@ -56,11 +56,33 @@ class SqliteHelper(context: Context, name: String, version: Int) : SQLiteOpenHel
             val no = cursor.getLong(cursor.getColumnIndex("no")) //첫번째줄의 값을 꺼낼수있는 상태에서 Long타입 값을 꺼낼꺼다
             val content = cursor.getString(cursor.getColumnIndex("content")) //cursor에게 속성값의 인덱스를 알려줘야함
             val datetime = cursor.getLong(cursor.getColumnIndex("datetime"))
-            val memo=Memo(no,content,datetime)
+            val memo = Memo(no, content, datetime)
             list.add(memo)
         }
-
+        cursor.close() //리턴전 커F서와 데베 close해줘야함 메모리 릭 날수도 있음
+        rd.close()
         return list
+    }
+
+    //데이터 수정: 데이터 수정도 key-value로 변환해서 해줘야함
+    fun updateMemo(memo: Memo) {
+        val wd = writableDatabase
+        val values = ContentValues()
+        values.put("content", memo.content)
+        values.put("datetime", memo.datetime)
+        //memo테이블에 values넣을건데 primary키인 no로 어느 인덱스 번호에 값 넣을건지 알려줘야함
+        wd.update("memo", values, "no = ${memo.no}", null)
+        wd.close()
+    }
+
+    //데이터 삭제: 인자값으로 long타입의 no을 줘도됨
+    fun deleteMemo(memo: Memo) {
+        val wd = writableDatabase
+        val delete = "delete from memo where no = ${memo.no}" //memo테이블에서 no가 memo.no와 같은 데이터를 지워라
+        wd.execSQL(delete)
+        //위에 두줄 한줄로 가능->   wd.delete("memo", "no=${memo.no}", null)
+        wd.close()
+
     }
 }
 
@@ -68,16 +90,23 @@ class SqliteHelper(context: Context, name: String, version: Int) : SQLiteOpenHel
 data class Memo(var no: Long?, var content: String, var datetime: Long)
 
 
-class Main : AppCompatActivity() {
-    val DB_NAME = "sqlite.sql"
-    val DB_VERSION = 1
-
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
-
-        //SqliteHelper 객체 생성후 호출되면 DB_NAME에 해당하는 거 뒤지고 없으면 DB_NAME 파일 생성함과 동시에 meno라는 테이블도 같이 생성됨
-        val helper = SqliteHelper(this, DB_NAME, DB_VERSION)
-        val meno: Memo = Memo(1, "내용", 123456)
-        helper.insertMemo(meno)
-    }
-}
+//class SQLiteActivity : AppCompatActivity() {
+//    private lateinit var binding: ActivityMain3Binding
+//
+//    companion object {
+//        const val DB_NAME = "sqlite.sql"
+//        const val DB_VERSION = 1
+//    }
+//
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        binding = ActivityMain3Binding.inflate(layoutInflater)
+//        setContentView(binding.root)
+//
+//        //SqliteHelper 객체 생성후 호출되면 DB_NAME에 해당하는 거 뒤지고 없으면 DB_NAME 파일 생성함과 동시에 meno라는 테이블도 같이 생성됨
+//        val helper = SqliteHelper(this, DB_NAME, DB_VERSION)
+//        val meno: Memo = Memo(1, "내용", 123456)
+//        helper.insertMemo(meno)
+//    }
+//}
+//
