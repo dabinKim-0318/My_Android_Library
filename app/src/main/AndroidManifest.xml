@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Kotlin_Study"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Server.MainActivity"
+            android:exported="true" />
+        <activity
             android:name=".Server.ServerActivity"
             android:exported="true">
             <intent-filter>
@@ -28,7 +31,7 @@
         <activity android:name="My_Library.addTextChangedListener" />
         <activity
             android:name="My_Library.Dialog_Doll"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name="My_Library.Dialog_Custom" />
         <activity android:name="My_Library.EditText_Activity" />
         <activity android:name="My_Library.Dialog_Activity" />
@@ -42,7 +45,7 @@
         <activity android:name="My_Library.ButtonNavigationView" />
         <activity
             android:name="My_Library.ViewPager2"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name="My_Library.Fragment_Activity"
             android:exported="true" />
@@ -60,7 +63,7 @@
             android:exported="true" />
         <activity
             android:name=".Android.GithubService_Activity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Android.SharedPreference"
             android:exported="true" />
