@@ -1,3 +1,4 @@
+/*
 package Kotlin
 
 //object class로 선언하면 클래스를 생성자로 인스턴스화 하지 않아도 블록 안의 프로퍼티와 메서드를 호출해서 사용 가능
@@ -121,4 +122,4 @@ fun main(args: Array<String>) {
 
     var nice = "안녕"
     println(nice.plus("반가워"))  //안녕 반가워
-}
+}*/

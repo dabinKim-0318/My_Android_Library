@@ -13,8 +13,8 @@
         android:theme="@style/Theme.Kotlin_Study"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="SQLite.test.MainActivity"
-            android:exported="true" >
+            android:name="Room.RoomActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="SQLite.SQLiteActivity"
+            android:name="SQLite.DB.MainActivity"
             android:exported="true">
         </activity>
         <activity

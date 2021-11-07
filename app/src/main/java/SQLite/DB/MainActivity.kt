@@ -1,4 +1,4 @@
-package SQLite.test
+package SQLite.DB
 
 
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package SQLite.test
+package SQLite.DB
 
 import android.content.ContentValues
 import android.content.Context

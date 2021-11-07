@@ -5,7 +5,7 @@
     <item
         android:id="@+id/action_search"
         android:icon="@drawable/memo_icon"
-        android:title="memo" />
+        android:title="roomMemo" />
 
     <item
         android:id="@+id/action_settings"
