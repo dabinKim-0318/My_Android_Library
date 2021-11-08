@@ -28,6 +28,7 @@ fun main(args: Array<String>) {
     println(list.isEmpty()) //빈 배열임?: false
     println(list.size)  //*자바랑 다르다!!!!!!!!!!!자바는 size()로 배열 값 개수 가져왔는데 얘는 필드인가
     println(list.get(0)) //0번째 인덱스 값 줌: 100
+    println(list[0])
     println(list.indexOf(100)) //100의 인덱스 번호 리턴: 0
     //list.clear()  값 싹다 지우는거 가능
     list.remove(100) //해당 객체 지우기

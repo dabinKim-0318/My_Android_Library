@@ -22,6 +22,7 @@ fun main(args: Array<String>) {
 //배열 꺼내는 방법(1)
     val arrvalue2 = arr3.get(3)
     val arrvalue = arr[2]
+
 //배열 값 바꾸는 방법
     val arrvalue3 = arr.set(0, 24)
     arr[0] = 3
