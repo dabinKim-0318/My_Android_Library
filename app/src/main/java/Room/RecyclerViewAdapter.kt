@@ -10,7 +10,7 @@ class RecyclerViewAdapter(val roomMemoList: List<RoomMemo>) : RecyclerView.Adapt
     class Holder(val binding: ItemRecyclerBinding) : RecyclerView.ViewHolder(binding.root) {
         fun setMemo(roomMemo: RoomMemo) {
             binding.textNo.text = "${roomMemo.no}"
-            binding.textContent.text = roomMemo.content
+            binding.textContent.text = roomMemo.content.toString()
             val sdf = SimpleDateFormat("yyyy/MM/dd hh:mm")
             // 날짜 포맷은 SimpleDateFormat으로 설정합니다.
             binding.textDatetime.text = "${sdf.format(roomMemo.dateTime)}"

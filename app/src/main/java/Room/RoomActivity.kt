@@ -65,13 +65,12 @@ class RoomActivity : AppCompatActivity() {
             recyclerMemo.adapter = memoAdapter
             recyclerMemo.layoutManager = LinearLayoutManager(this@RoomActivity)  //여기서의 this는 바인딩객체 가르켜서..
         }
-
         refreshAdapter()
 
         /*   binding.recyclerMemo.adapter = memoAdapter
            binding.recyclerMemo.layoutManager = LinearLayoutManager(this)*/
         binding.buttonSave.setOnClickListener {
-            val content = binding.editMemo.toString()
+            val content = binding.editMemo.text.toString()
             if (content.isNotEmpty()) {
                 val dateTime = System.currentTimeMillis()
                 val memo = RoomMemo(content, dateTime)
@@ -83,8 +82,20 @@ class RoomActivity : AppCompatActivity() {
 
     fun refreshAdapter() {
         memoList.clear()
-        memoList.addAll(helper.roomMemoDao().getAll())
+        memoList.addAll(memoDAO.getAll())
         memoAdapter.notifyDataSetChanged() //이미 위에서 어댑처 연결되어잇고 notify~하면 제일 최근 리스트로 뿌림
         binding.editMemo.setText("")
     }
+
+//    override fun onDestroy() {
+//        super.onDestroy()
+//        refresh()
+//    }
+//    fun refresh() {
+//        for (item in 0..memoList.size+1) {
+//            memoDAO.delete(memoDAO.getAll())
+//        }
+//
+//        memoAdapter.notifyDataSetChanged()
+//    }
 }
