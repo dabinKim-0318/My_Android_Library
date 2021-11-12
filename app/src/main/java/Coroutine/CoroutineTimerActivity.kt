@@ -1,6 +1,7 @@
 package Coroutine
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kotlin_study.databinding.ActivityTimerBinding
@@ -27,17 +28,19 @@ class CoroutineTimerActivity : AppCompatActivity() {
 //        }
 
         binding.bvStart.setOnClickListener {
-            Toast.makeText(this,"시작",Toast.LENGTH_SHORT).show()
-            CoroutineScope(Dispatchers.Main).launch {
+            Toast.makeText(this, "시작", Toast.LENGTH_SHORT).show()
+            GlobalScope.launch {
                 while (before !== after) {
                     val minute = String.format("%02d", after / 60)
                     val second = String.format("%2d", after % 60)
 
                     binding.tvTime.setText("${minute}:${second}")
+                    Log.d("setText", "setText")
                 }
 
                 withContext(Dispatchers.Default) {
                     while (started) {
+                        Log.d("setText", "setText")
                         delay(1000)
                         if (started) {
                             before = after //0 1 2

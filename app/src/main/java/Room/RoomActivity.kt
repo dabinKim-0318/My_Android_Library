@@ -61,10 +61,22 @@ class RoomActivity : AppCompatActivity() {
         //데베에서 목록 가져옴
         memoList.addAll(memoDAO.getAll()) //helper에 있는 roomMemoDao메소드에 접근해서 RoomMemoDAO인터페이스타입반환하는 getAll실행
         memoAdapter = RecyclerViewAdapter(memoList)
+
         with(binding) {
             recyclerMemo.adapter = memoAdapter
             recyclerMemo.layoutManager = LinearLayoutManager(this@RoomActivity)  //여기서의 this는 바인딩객체 가르켜서..
         }
+
+        binding.run() {
+            recyclerMemo.adapter = memoAdapter
+            recyclerMemo.layoutManager = LinearLayoutManager(this@RoomActivity)  //여기서의 this는 바인딩객체 가르켜서..
+        }
+
+        binding.apply {
+            recyclerMemo.adapter = memoAdapter  //마지막 결과값 리턴한거 변수에 담아서 쓰는게 아니니까 객체 초기화하는 스코프 함수 써도 될듯?
+            binding.recyclerMemo.layoutManager = LinearLayoutManager(this@RoomActivity)  //여기서의 this는 바인딩객체 가르켜서..
+        }
+
         refreshAdapter()
 
         /*   binding.recyclerMemo.adapter = memoAdapter
