@@ -18,7 +18,6 @@
             app:menu="@menu/appbar_item"
             app:navigationIcon="@drawable/three_line"
             app:title="page title"
-
             android:background="#ffffff"/>
     </com.google.android.material.appbar.AppBarLayout>
 
