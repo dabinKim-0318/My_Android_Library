@@ -13,7 +13,10 @@
         android:theme="@style/Theme.Kotlin_Study"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="Coroutine.CoroutineTimerActivity"
+            android:name="designpattern.View.AddActivity"
+            android:exported="true" />
+        <activity
+            android:name="designpattern.View.Main"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,8 +25,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="Coroutine.CoroutineActivity"
+            android:name="MVVM.AddActivity"
+            android:exported="true" />
+        <activity
+            android:name="MVVM.MainActivityMVVM"
             android:exported="true"></activity>
+        <activity
+            android:name="Coroutine.CoroutineTimerActivity"
+            android:exported="true" />
+        <activity
+            android:name="Coroutine.CoroutineActivity"
+            android:exported="true" />
         <activity
             android:name="Thread.TimerActivity"
             android:exported="true" />

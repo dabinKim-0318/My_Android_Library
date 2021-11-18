@@ -8,6 +8,7 @@ plugins {
 android {
     buildFeatures {
         viewBinding true  //  viewBinding = true 아니다
+        dataBinding  true
     }
 
     compileSdk 31

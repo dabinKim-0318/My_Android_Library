@@ -3,7 +3,26 @@ package MVVM
 import android.app.Application
 import androidx.lifecycle.LiveData
 
-class ContactRepository(application: Application) {
+class Repository(application: Application) {
+    private val todoDatabase: TodoDatabase = TodoDatabase.getInstance(application)!!
+    private val todoDao: TodoDao = todoDatabase.todoDao()
+    private val todos: LiveData<List<Todo>> = todoDao.getAll()
+
+    fun getAll(): LiveData<List<Todo>> {
+        return todos
+    }
+
+    fun insert(todo: Todo) {
+        todoDao.insert(todo)
+    }
+
+    fun delete(todo: Todo) {
+        todoDao.delete(todo)
+    }
+}
+
+/*
+class Repository(application: Application) {
     //빌드한 helper가져오기
     private val contactDatabase = ContactDatabase.getInstance(application)!!
 
@@ -37,4 +56,4 @@ class ContactRepository(application: Application) {
         } catch (e: java.lang.Exception) {
         }
     }
-}
+}*/

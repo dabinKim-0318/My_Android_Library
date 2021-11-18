@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MVVM.AddActivity">
+    <TextView
+        android:text="일정"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.41000003"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/add_edittext_title"
+        app:layout_constraintBottom_toBottomOf="@+id/add_tv_title"
+        app:layout_constraintTop_toTopOf="@+id/add_tv_title"
+        app:layout_constraintStart_toEndOf="@+id/add_tv_title"
+        android:layout_marginStart="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"/>
+
+    <TextView
+        android:text="설명"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_tv_descript"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/add_tv_title"
+        app:layout_constraintStart_toStartOf="@+id/add_tv_title"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/add_edittext_descript"
+        app:layout_constraintStart_toStartOf="@+id/add_edittext_title"
+        app:layout_constraintTop_toTopOf="@+id/add_tv_descript"
+        app:layout_constraintBottom_toBottomOf="@+id/add_tv_descript"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"/>
+
+    <Button
+        android:text="done"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:id="@+id/add_button"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
