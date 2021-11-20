@@ -22,7 +22,6 @@ class CoroutineTimerActivity : AppCompatActivity() {
 //            override fun handleMessage(msg: Message) {  //메시지가 담고 있는 내용에 따라 핸들러 호출
 //                val minute = String.format("%02d", after / 60)
 //                val second = String.format("%2d", after % 60)
-//
 //                binding.tvTime.setText("${minute}:${second}")
 //            }
 //        }
