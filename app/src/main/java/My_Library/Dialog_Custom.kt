@@ -4,6 +4,7 @@ import android.app.Dialog
 import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.view.Gravity
 import android.view.Window
 import android.widget.Button
 import android.widget.Toast
@@ -29,6 +30,7 @@ class Dialog_Custom : AppCompatActivity() {
 
         // dialog01을 디자인하는 함수
         fun showDialog01() {
+            dialog.getWindow()!!.setGravity(Gravity.BOTTOM)
             dialog.show(); // 다이얼로그 띄우기
 
             // *주의할 점: findViewById()를 쓸 때는 -> 앞에 반드시 다이얼로그 이름을 붙여야 한다.

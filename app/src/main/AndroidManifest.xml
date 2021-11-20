@@ -18,11 +18,7 @@
         <activity
             android:name="designpattern.View.Main"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="MVVM.AddActivity"
@@ -51,9 +47,7 @@
         <activity
             android:name="SQLite.DB.MainActivity"
             android:exported="true" />
-        <activity
-            android:name=".Server.ServerActivity"
-            android:exported="true" />
+        <activity android:name=".Server.ServerActivity" />
         <activity android:name="Splash.PumkinSplash" />
         <activity android:name="My_Library.SOPT_Fragment_Activity" />
         <activity android:name="My_Library.SampleFragment_Activity" />
@@ -61,13 +55,22 @@
         <activity android:name="My_Library.addTextChangedListener" />
         <activity
             android:name="My_Library.Dialog_Doll"
-            android:windowSoftInputMode="adjustResize" />
-        <activity android:name="My_Library.Dialog_Custom" />
+            android:windowSoftInputMode="adjustResize">
+
+        </activity>
+        <activity
+            android:name="My_Library.Dialog_Custom"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="My_Library.EditText_Activity" />
         <activity android:name="My_Library.Dialog_Activity" />
         <activity android:name="My_Library.CollapsingToolbarLayout_Activity" />
         <activity android:name="My_Library.AppBar_Activiry" />
-        <activity android:name="My_Library.Selector" />
         <activity android:name="My_Library.CheckBox" />
         <activity
             android:name="My_Library.Spinner_RadioButton"

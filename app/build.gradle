@@ -77,4 +77,5 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.0" //라이브데이터
     implementation "androidx.cardview:cardview:1.0.0" //card view
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0" //라이브사이클
+    implementation 'com.tbuonomo:dotsindicator:4.2' //viewpager2 indicator
 }
