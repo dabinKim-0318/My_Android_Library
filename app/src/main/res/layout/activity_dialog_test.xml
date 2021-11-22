@@ -8,8 +8,8 @@
 
   <androidx.appcompat.widget.AppCompatButton
       android:id="@+id/showBtn"
-      android:layout_width="300dp"
-      android:layout_height="300dp"/>
+      android:layout_width="300sp"
+      android:layout_height="300sp"/>
 
 </LinearLayout>
 
