@@ -17,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_main6.*
 
 class Main : AppCompatActivity() {
 
+    //viewmodel 데려오기
     private lateinit var contactViewModel: ContactViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,9 +35,9 @@ class Main : AppCompatActivity() {
             deleteDialog(contact)
         })
 
-        val lm = LinearLayoutManager(this)
+
         main_recycleview.adapter = adapter
-        main_recycleview.layoutManager = lm
+        main_recycleview.layoutManager = LinearLayoutManager(this)
         main_recycleview.setHasFixedSize(true)
 
         contactViewModel = ViewModelProviders.of(this).get(ContactViewModel::class.java)
