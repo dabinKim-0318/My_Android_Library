@@ -13,11 +13,11 @@
         android:theme="@style/Theme.Kotlin_Study"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="designpattern.View.AddActivity"
+            android:name="Recyclerview.AsyncListDiffer.AsyncListDifferActivity"
             android:exported="true" />
         <activity
-            android:name="designpattern.View.Main"
-            android:exported="true">
+            android:name="Recyclerview.ListAdapter.ListAdapterActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,13 +25,22 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="Recyclerview.DiffUtilActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name="designpattern.View.AddActivity"
+            android:exported="true" />
+        <activity
+            android:name="designpattern.View.Main"
+            android:exported="true"></activity>
+        <activity
             android:name="MVVM.AddActivity"
             android:exported="true" />
         <activity
             android:name="MVVM.MainActivityMVVM"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name="Coroutine.CoroutineTimerActivity"
             android:exported="true" />
@@ -61,14 +70,10 @@
         <activity android:name="My_Library.addTextChangedListener" />
         <activity
             android:name="My_Library.Dialog_Doll"
-            android:windowSoftInputMode="adjustResize">
-
-        </activity>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="My_Library.Dialog_Custom"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity android:name="My_Library.EditText_Activity" />
         <activity android:name="My_Library.Dialog_Activity" />
         <activity android:name="My_Library.CollapsingToolbarLayout_Activity" />

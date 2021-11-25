@@ -27,6 +27,15 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.Holder>() {
         var mMemo: Memo? = null
 
         init {
+            //삭제 버튼을 누르면 view를 지우는게 아니라 삭제 버튼이랑 매칭되는
+            // Memo타입의 list 안의 데이터를 지우는 것
+            //따라서 itemView나 binding.root를 전달하는게 아니라
+            // position이 담긴 Memo 리스트들의 데이터를 리스트에서 삭제하고 리사이클러뷰를 다시 그려야함
+           /* binding.buttonDelete.setOnClickListener {
+                helper?.deleteMemo(itemView!!) //deleteMemo는 null허용 안해서 ..
+                listData.remove(itemView)
+                notifyDataSetChanged()
+            }*/
             binding.buttonDelete.setOnClickListener {
                 helper?.deleteMemo(mMemo!!) //deleteMemo는 null허용 안해서 ..
                 listData.remove(mMemo)
