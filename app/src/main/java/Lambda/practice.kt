@@ -1,0 +1,4 @@
+package Lambda
+
+class practice {
+}
