@@ -80,6 +80,10 @@ fun main() {
 
 
 }
+fun withArgs3(a: String, out1: (String, String) -> String, out: (String, String) -> String) {
+    println("out(a, b)")
+}
+
 
 fun withArgs2(a: String, out1: (String, String) -> String, out: (String, String) -> String) {
     println("out(a, b)")
