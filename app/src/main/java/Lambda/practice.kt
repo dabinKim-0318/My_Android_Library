@@ -74,7 +74,15 @@ fun main() {
     withArgs("a", "b", { a, b -> a + b })
     withArgs("a", "b") { a, b -> a + b }
 
+    //16. 인자 람다 많은 경우
+    withArgs2("a", { a, b -> a + b }, { a, b -> a + b })
+    withArgs2("a", { a, b -> a + b }) { a, b -> a + b }
 
+
+}
+
+fun withArgs2(a: String, out1: (String, String) -> String, out: (String, String) -> String) {
+    println("out(a, b)")
 }
 
 fun withArgs(a: String, b: String, out: (String, String) -> String) {
