@@ -68,7 +68,7 @@ fun main() {
     oneParam { "a+$it" } //it이 파라미터의 인자로 들어온 값 역할
 
     //14. 매개변수 두개
-    moreParam { a, g -> a + g }
+    moreParam { a, g -> a + g }  //인자를 it으로 대체할 수 없음!
 
     //15. 마지막 인자가 람다인 경우 밖으로 빼낼 수 있음
     withArgs("a", "b", { a, b -> a + b })
