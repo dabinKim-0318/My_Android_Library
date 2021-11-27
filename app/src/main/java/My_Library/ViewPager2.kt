@@ -1,7 +1,6 @@
 package My_Library
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
@@ -10,6 +9,7 @@ import com.example.kotlin_study.R
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.activity_view_pager2.*
+import practice.shortToast
 
 class ViewPager2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +32,7 @@ class ViewPager2 : AppCompatActivity() {
 
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 // handle tab select
-                Toast.makeText(applicationContext, "탭 눌림", Toast.LENGTH_SHORT).show()
+                shortToast("탭 눌림")  //확장함수 사용
             }
         })
 
