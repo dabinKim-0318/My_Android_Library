@@ -19,6 +19,7 @@ ListAdapter는 AsyncListDiffer의 wrapper 클래스로, RecyclerView.Adapter<VH>
 ListAdapter는 데이터 클래스를 받고 있다는 게 특징인데요,
 이는 사용자가 어댑터 내에서 데이터 리스트를 정의하지 않고 리스트 자체에서 데이터 리스트를 정의하기 때문입니다.
 그래서 ListAdapter에서 구현해야 할 함수를 보면 getItemCount가 사라져 있는 것을 알 수 있습니다.*/
+//Data
 class ListAdapterRecyclerView : ListAdapter<Data, ListAdapterRecyclerView.ViewHolder>(PlaceDiffUtilCallback()) {
     val followerList = mutableListOf<Data>()
 
