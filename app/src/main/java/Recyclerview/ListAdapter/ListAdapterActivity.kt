@@ -17,21 +17,6 @@ class ListAdapterActivity : AppCompatActivity() {
         val oldList = listOf(
             Data("1"),
             Data("1"),
-            Data("1"),
-            Data("1"),
-            Data("1"),
-            Data("1"),
-            Data("1"),
-            Data("1"),
-            Data("1"),
-            Data("1"),
-            Data("1"),
-            Data("1"),
-            Data("1"),
-            Data("1"),
-            Data("1"),
-            Data("1"),
-            Data("1"),
         )
         val newList = listOf(
             Data("1"),
