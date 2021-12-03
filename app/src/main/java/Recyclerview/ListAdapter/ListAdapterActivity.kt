@@ -21,13 +21,7 @@ class ListAdapterActivity : AppCompatActivity() {
         val newList = listOf(
             Data("1"),
             Data("1"),
-            Data("1"),
-            Data("1"),
-            Data("3"),
-            Data("3"),
-            Data("3"),
-            Data("1"),
-            Data("1"),
+
         )
         myRecyclerViewAdapter.followerList.addAll(oldList)
         binding.rv.adapter = myRecyclerViewAdapter
