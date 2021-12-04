@@ -19,8 +19,8 @@ class MainThread : AppCompatActivity() {
         workThreadRunnable.start()
         Log.d("MainThread", "1")
 
-     //   구현한 인터페이스 내부에 메서드가 하나만 있는 경우 람다식으로 변환 가능
-        Thread{
+        //   구현한 인터페이스 내부에 메서드가 하나만 있는 경우 람다식으로 변환 가능
+        Thread {
             var i = 0
             while (i < 10) {
                 i += 1
