@@ -1,5 +1,6 @@
 package Thread
 
+import Util.shortToast
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,7 @@ class MainThread : AppCompatActivity() {
         val workerThread = WorkThread()
         workerThread.start()
 
+        shortToast("시작")
 
         val workThreadRunnable = Thread(WorkThreadRunnable())
         workThreadRunnable.start()
