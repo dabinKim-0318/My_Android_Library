@@ -1,10 +1,13 @@
 package Room.practice
 
+import Kotlin.User
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
 import com.example.kotlin_study.databinding.ActivityRoomPersonBinding
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 
 class RoomPersonActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRoomPersonBinding
@@ -46,5 +49,26 @@ class RoomPersonActivity : AppCompatActivity() {
                 binding.etPhone.setText("")
             }
         }
+
+
+/*        var newUser = User("김똥깨", "20", "010-1111-5555")
+
+        // 싱글톤 패턴을 사용하지 않은 경우
+        val db = Room.databaseBuilder(
+            applicationContext,
+            AppDatabase::class.java,
+            "user-database"
+        ).allowMainThreadQueries() // 그냥 강제로 실행
+            .build()
+        db.UserDao().insert(newUser)
+
+        // 싱글톤 패턴을 사용한 경우
+        val db = UserDatabase.getInstance(applicationContext)
+        CoroutineScope(Dispatchers.IO).launch { // 다른애 한테 일 시키기
+            db!!.userDao().insert(newUser)
+        }*/
+
+
+
     }
 }
