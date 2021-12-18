@@ -31,10 +31,10 @@
             android:name="Recyclerview.DiffUtilActivity"
             android:exported="true"></activity>
         <activity
-            android:name="designpattern.View.AddActivity"
+            android:name="architecture.View.AddActivity"
             android:exported="true" />
         <activity
-            android:name="designpattern.View.Main"
+            android:name="architecture.View.Main"
             android:exported="true" />
         <activity
             android:name="MVVM.AddActivity"

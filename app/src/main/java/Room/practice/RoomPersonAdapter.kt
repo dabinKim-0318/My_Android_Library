@@ -1,28 +1,29 @@
-package Room.practice
+package com.example.sopt_assignment_dabin.data.local.Room
 
-import android.view.LayoutInflater
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
-import com.example.kotlin_study.databinding.RoompersonItemlistBinding
+import android.content.Context
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
 
-class RoomPersonAdapter(val personList: MutableList<RoomPerson>) : RecyclerView.Adapter<RoomPersonAdapter.Holder>() {
-    class Holder(val view: RoompersonItemlistBinding) : RecyclerView.ViewHolder(view.root) {
-        fun setPerson(person: RoomPerson) {
-            view.tvName.setText(person.name)
-            view.tvPhone.setText(person.phone)
-            view.tvAddress.setText(person.address)
+
+@Database(entities = [RoomLogin::class], version = 1, exportSchema = false)
+abstract class RoomHelper : RoomDatabase() {
+    abstract fun roomPersonDao(): RoomDAO
+
+    companion object {
+        private var instance: UserDatabase? = null
+
+        @Synchronized
+        fun getInstance(context: Context): UserDatabase? {
+            if (instance == null) {
+                synchronized(UserDatabase::class) {
+                    instance = Room.databaseBuilder(
+                        context.applicationContext,
+                        UserDatabase::class.java,
+                        "user-database"
+                    ).build()
+                }
+            }
+            return instance
         }
     }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
-        val view = RoompersonItemlistBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return Holder(view)
-    }
-
-    override fun getItemCount() = personList.size
-
-    override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.setPerson(personList[position])
-    }
-
-}
