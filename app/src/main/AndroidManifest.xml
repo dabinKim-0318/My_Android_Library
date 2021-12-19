@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Kotlin_Study"
         android:usesCleartextTraffic="true">
         <activity
+            android:name="MVVM.make_ViewModel.HasParamViewModelFactoryActivity"
+            android:exported="false" />
+        <activity
+            android:name="MVVM.make_ViewModel.NoParamViewModelActivity"
+            android:exported="false" />
+        <activity
             android:name="NavigationComponent.SampleProject"
             android:exported="true" />
         <activity
@@ -29,7 +35,7 @@
         </activity>
         <activity
             android:name="Recyclerview.DiffUtilActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name="architecture.View.AddActivity"
             android:exported="true" />
