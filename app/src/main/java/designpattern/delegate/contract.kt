@@ -24,7 +24,7 @@ class me() : contract {
     }
 }
 
-//중계인은 me에게 위임받아야 부동산 계약이 가능
+//중계인은 me에게 위임받아야 부동산 계약
 class hi() {
     val me2 = me()
 }
