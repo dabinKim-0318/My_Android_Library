@@ -9,7 +9,7 @@ plugins {
 android {
     buildFeatures {
         viewBinding true  //  viewBinding = true 아니다
-        dataBinding  true
+        dataBinding true
     }
 
     compileSdk 31
@@ -40,6 +40,8 @@ android {
 }
 
 dependencies {
+
+
     //apply plugin: 'kotlin-kapt'
 //앞에 붙는 implementation이 해당 라이브러리를 내 프로젝트로 가져오겠다는 것
     implementation 'androidx.core:core-ktx:1.6.0'
@@ -83,4 +85,11 @@ dependencies {
     //navigationComponent
     implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
     implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
+    //Dagger
+    implementation "com.google.dagger:dagger:2.38.1"
+    implementation "com.google.dagger:dagger-android:2.38.1"
+    implementation "com.google.dagger:dagger-android-support:2.38.1"
+
+    kapt "com.google.dagger:dagger-android-processor:2.38.1"
+    kapt "com.google.dagger:dagger-compiler:2.38.1"
 }

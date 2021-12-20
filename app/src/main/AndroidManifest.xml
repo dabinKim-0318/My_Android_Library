@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Kotlin_Study"
         android:usesCleartextTraffic="true">
         <activity
+            android:name="DI.withDI"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="DI.WithoutDI"
+            android:exported="false" />
+        <activity
             android:name="MVVM.make_ViewModel.HasParamViewModelFactoryActivity"
             android:exported="false" />
         <activity
@@ -27,21 +39,12 @@
         <activity
             android:name="Recyclerview.ListAdapter.ListAdapterActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="Recyclerview.DiffUtilActivity"
             android:exported="true" />
-        <activity
-            android:name="architecture.View.AddActivity"
-            android:exported="true" />
-        <activity
-            android:name="architecture.View.Main"
-            android:exported="true" />
+
         <activity
             android:name="MVVM.AddActivity"
             android:exported="true" />
@@ -60,9 +63,7 @@
         <activity
             android:name="Thread.MainThread"
             android:exported="true" />
-        <activity
-            android:name="Room.practice.RoomPersonActivity"
-            android:exported="true" />
+
         <activity
             android:name="Room.RoomActivity"
             android:exported="true" />
