@@ -6,6 +6,7 @@
     <string name="supporting_text">supporting_text</string>
     <string name="title">title</string>
     <string name="activity_dialog_doll_title">누구에게 <b>칭찬</b>했나요?</string>
+    <string name="firebase_web_client_id">354731374993-kor8mj58qranknpvo69mtb4tu2p01q00.apps.googleusercontent.com</string>
 
 
     <string-array name="좋아">

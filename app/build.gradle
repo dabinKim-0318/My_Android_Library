@@ -2,6 +2,7 @@ plugins {
 
     id 'com.android.application'
     id 'kotlin-android'
+    id 'com.google.gms.google-services'
     id 'kotlin-kapt'
     id 'kotlin-android-extensions'
 }
@@ -90,6 +91,19 @@ dependencies {
     implementation "com.google.dagger:dagger-android:2.38.1"
     implementation "com.google.dagger:dagger-android-support:2.38.1"
 
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:29.0.1')
+
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+
+    // Declare the dependencies for any other desired Firebase products
+    // For example, declare the dependencies for Firebase Authentication and Cloud Firestore
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation 'com.google.android.gms:play-services-auth:20.0.0'
+    implementation 'com.google.firebase:firebase-core:17.0.0'
+
     kapt "com.google.dagger:dagger-android-processor:2.38.1"
     kapt "com.google.dagger:dagger-compiler:2.38.1"
+
 }
